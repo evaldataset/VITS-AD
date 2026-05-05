@@ -1,0 +1,84 @@
+# @package _global_
+# Default PatchTraj experiment configuration
+defaults:
+  - /model: dinov2_base
+  - /data: smd
+  - /render: line_plot
+  - _self_
+
+# PatchTraj predictor
+patchtraj:
+  K: 8                    # Number of past windows
+  delta: 1                # Prediction horizon (number of strides ahead)
+  d_model: 256            # Predictor hidden dimension
+  n_heads: 4              # Transformer attention heads
+  n_layers: 2             # Transformer encoder layers
+  dim_feedforward: 1024   # Transformer feedforward dimension
+  dropout: 0.1
+  activation: gelu
+  correspondence_mode: geometric
+  spatial_attention: false  # Set true for spatial-temporal cross-attention model
+  use_identity_pi: false  # Ablation: set true to disable geometric correspondence
+  ot_reg: 0.1
+  ot_max_iterations: 100
+  ot_tolerance: 1.0e-3
+
+# Training
+training:
+  epochs: 100
+  batch_size: 64
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  scheduler: cosine
+  warmup_epochs: 5
+  # Huber loss
+  loss: huber
+  huber_delta: 1.0
+  # Trimmed mean (exclude top 10% residuals)
+  trimmed_ratio: 0.10
+  # Early stopping on normal validation loss
+  patience: 10
+  # Reproducibility
+  seed: 42
+
+# Scoring
+scoring:
+  # ViewDisagree weight
+  lambda_disagree: 1.0
+  # CalibGuard
+  alpha: 0.01  # Target FAR
+  calib_window: 2000  # Rolling calibration window size
+  smooth_window: 5  # Sliding window smoothing size (odd integer, 1=disabled)
+  smooth_method: mean  # Smoothing method: mean or median
+  # Dual-signal scoring: trajectory + distributional distance
+  dual_signal:
+    enabled: false       # Set to true to use dual-signal scoring
+    alpha: 0.5           # Weight for trajectory signal (1-alpha for distributional)
+    auto_alpha: false    # Fixed-alpha policy by default (paper headline). Set true only for the negative-result CoV-selector ablation.
+
+multiscale:
+  enabled: false
+  results_dir: null
+  entity: null
+  method: rank_weighted
+  window_sizes: [50, 100, 200]
+  renderers: []
+
+# CalibGuard conformal FAR control (optional post-processing in detect.py)
+calibguard:
+  enabled: false            # Set to true to run CalibGuard evaluation
+  alpha_values: [0.01, 0.05, 0.10]  # Target FAR levels to evaluate
+  calibration_ratio: 0.5    # Fraction of normal scores for calibration
+  rolling_window: 0         # 0=fixed threshold only, >0=also run rolling mode
+  drift_sigma: 3.0          # Drift detection sensitivity (std deviations)
+
+# Experiment tracking
+wandb:
+  project: vits
+  entity: null  # Set via environment or CLI
+  tags:
+    - patchtraj
+    - phase1
+
+# Output
+output_dir: results/${model.name}_${data.name}_${render.name}

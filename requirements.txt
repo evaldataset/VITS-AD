@@ -1,0 +1,40 @@
+# Core
+torch>=2.1.0
+torchvision>=0.16.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Vision models
+transformers>=4.36.0
+open-clip-torch>=2.24.0
+timm>=0.9.12
+
+# Rendering
+matplotlib>=3.8.0
+pyts>=0.13.0
+librosa>=0.10.0
+Pillow>=10.0.0
+
+# Data
+pandas>=2.1.0
+scikit-learn>=1.3.0
+
+# Configuration & Experiment tracking
+hydra-core>=1.3.0
+omegaconf>=2.3.0
+wandb>=0.16.0
+
+# Evaluation
+# (metrics implemented in src/evaluation/metrics.py using scikit-learn)
+geomloss>=0.2.6
+
+# Development
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+isort>=5.12.0
+mypy>=1.5.0
+
+# Utilities
+tqdm>=4.66.0
+rich>=13.0.0

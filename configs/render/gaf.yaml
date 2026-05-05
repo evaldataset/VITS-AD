@@ -1,0 +1,8 @@
+# Gramian Angular Field rendering configuration
+name: gaf
+image_size: 224
+method: summation  # summation | difference
+# GAF renders one feature at a time; multi-feature → multi-channel or tiled
+multi_feature_mode: channel_mean  # channel_mean | tile | first_only
+colormap: viridis
+normalize_input: true

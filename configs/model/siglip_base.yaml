@@ -1,0 +1,9 @@
+# SigLIP-base backbone configuration
+name: siglip-base
+pretrained: google/siglip-base-patch16-224
+patch_size: 16
+image_size: 224
+hidden_dim: 768
+num_patches: 196
+freeze: true
+extract_cls: false

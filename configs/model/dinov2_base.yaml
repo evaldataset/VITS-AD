@@ -1,0 +1,10 @@
+# DINOv2-base backbone configuration
+name: dinov2-base
+pretrained: facebook/dinov2-base
+patch_size: 14
+image_size: 224
+hidden_dim: 768
+num_patches: 256  # (224/14)^2 = 16^2
+freeze: true
+extract_cls: false  # We use patch tokens only
+feature_layers: []  # Empty = single-layer (last). Set e.g. [4, 8, 12] for multi-layer.

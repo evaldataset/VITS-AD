@@ -1,0 +1,17 @@
+# @package _global_
+# PatchTraj hyperparameter sweep configuration
+defaults:
+  - patchtraj_default
+  - _self_
+
+# Hydra sweeper configuration
+hydra:
+  sweeper:
+    params:
+      patchtraj.K: 4,8,16
+      patchtraj.delta: 1,2,4
+      patchtraj.d_model: 128,256
+      patchtraj.n_layers: 1,2,3
+      training.trimmed_ratio: 0.0,0.05,0.10
+      data.window_size: 64,100,128
+      render.stride: 1,10,20

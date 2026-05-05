@@ -1,0 +1,16 @@
+# Line plot rendering configuration
+name: line_plot
+image_size: 224
+dpi: 100
+# Colors: use a fixed colormap for determinism
+colormap: tab10
+background_color: white
+line_width: 1.0
+# Channels: all features overlaid on single plot
+overlay_features: true
+# Axes
+show_axes: false
+show_grid: false
+# Padding
+tight_layout: true
+pad_inches: 0.0
