@@ -1,0 +1,8 @@
+# Multi-view rendering configuration (combines multiple renderers)
+name: multi_view
+image_size: 224
+views:
+  - line_plot
+  - gaf
+  - recurrence_plot
+# Each view produces its own image; scored independently, then ensembled

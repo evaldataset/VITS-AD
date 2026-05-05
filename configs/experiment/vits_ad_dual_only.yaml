@@ -1,0 +1,75 @@
+# @package _global_
+# Temporal-only PatchTraj with dual-signal scoring.
+# For RP renderer: spatial attention disabled to avoid interference with
+# recurrence plot's inherent spatial structure.
+defaults:
+  - /model: dinov2_base
+  - /data: smd
+  - /render: recurrence_plot
+  - _self_
+
+# PatchTraj predictor — temporal-only (no spatial attention)
+patchtraj:
+  K: 8
+  delta: 1
+  d_model: 256
+  n_heads: 4
+  n_layers: 2
+  dim_feedforward: 1024
+  dropout: 0.1
+  activation: gelu
+  spatial_attention: false   # Disabled for RP — avoids interference
+  correspondence_mode: geometric
+  use_identity_pi: false
+  ot_reg: 0.1
+  ot_max_iterations: 100
+  ot_tolerance: 1.0e-3
+
+# Training
+training:
+  epochs: 100
+  batch_size: 32
+  lr: 5.0e-4
+  weight_decay: 1.0e-5
+  scheduler: cosine
+  warmup_epochs: 5
+  loss: huber
+  huber_delta: 1.0
+  trimmed_ratio: 0.10
+  patience: 15
+  seed: 42
+
+# Scoring with dual-signal
+scoring:
+  lambda_disagree: 1.0
+  alpha: 0.01
+  calib_window: 2000
+  smooth_window: 5
+  smooth_method: mean
+  dual_signal:
+    enabled: true
+    alpha: 0.5
+
+multiscale:
+  enabled: false
+  results_dir: null
+  entity: null
+  method: rank_weighted
+  window_sizes: [50, 100, 200]
+  renderers: []
+
+calibguard:
+  enabled: false
+  alpha_values: [0.01, 0.05, 0.10]
+  calibration_ratio: 0.5
+  rolling_window: 0
+  drift_sigma: 3.0
+
+wandb:
+  project: vits
+  entity: null
+  tags:
+    - patchtraj
+    - dual-signal
+
+output_dir: results/${model.name}_${data.name}_${render.name}_dual_only

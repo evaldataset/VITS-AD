@@ -1,0 +1,9 @@
+# Recurrence Plot rendering configuration
+name: recurrence_plot
+image_size: 224
+threshold: auto  # auto | float (distance threshold for binary RP)
+# Distance metric for RP
+metric: euclidean
+# Percentage of closest points (if threshold=auto)
+percentage: 10
+colormap: binary

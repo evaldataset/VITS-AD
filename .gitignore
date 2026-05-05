@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.python-version
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Datasets and outputs (never commit)
+data/
+results/
+results_local/
+results_nas/
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.parquet
+*.feather
+
+# Logs
+*.log
+logs/
+wandb/
+mlruns/
+
+# Hydra
+.hydra/
+multirun/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local scratch
+scratch/
+tmp/
+.tmp/

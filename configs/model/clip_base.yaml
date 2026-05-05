@@ -1,0 +1,9 @@
+# CLIP ViT-B/16 backbone configuration
+name: clip-vit-base
+pretrained: openai/clip-vit-base-patch16
+patch_size: 16
+image_size: 224
+hidden_dim: 768
+num_patches: 196  # (224/16)^2 = 196
+freeze: true
+extract_cls: false
