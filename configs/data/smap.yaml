@@ -1,0 +1,11 @@
+# SMAP (Soil Moisture Active Passive) configuration
+name: smap
+raw_dir: data/raw/smap
+processed_dir: data/processed/smap
+num_features: 25
+# SMAP has official train/test split
+train_ratio: null  # Use official split
+window_size: 100
+stride: 10
+normalize: true
+norm_method: standard

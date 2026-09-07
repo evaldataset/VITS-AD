@@ -1,0 +1,11 @@
+# SWaT (Secure Water Treatment) configuration
+name: swat
+raw_dir: data/raw/swat
+processed_dir: data/processed/swat
+num_features: 51
+# Time-based split: first 70% train, last 30% test
+train_ratio: 0.7
+window_size: 100
+stride: 10
+normalize: true
+norm_method: standard

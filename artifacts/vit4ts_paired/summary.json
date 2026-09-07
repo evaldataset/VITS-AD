@@ -1,0 +1,39 @@
+{
+  "n_series": 50,
+  "AUC-ROC": {
+    "vit4ts_vs_ours_vision": {
+      "n": 50,
+      "vit4ts_mean": 0.901098145877621,
+      "ours_vision_mean": 0.8864806057123595,
+      "delta": 0.014617540165261478,
+      "vit4ts_wins": 26,
+      "wilcoxon_p": 0.2337176972223095
+    },
+    "vit4ts_vs_raw_flatten": {
+      "n": 50,
+      "vit4ts_mean": 0.901098145877621,
+      "raw_flatten_mean": 0.8231102272789389,
+      "delta": 0.07798791859868229,
+      "vit4ts_wins": 23,
+      "wilcoxon_p": 0.06890003052758563
+    }
+  },
+  "VUS-PR": {
+    "vit4ts_vs_ours_vision": {
+      "n": 50,
+      "vit4ts_mean": 0.7870883668203681,
+      "ours_vision_mean": 0.7823910690778605,
+      "delta": 0.004697297742507482,
+      "vit4ts_wins": 23,
+      "wilcoxon_p": 0.5763403653645989
+    },
+    "vit4ts_vs_raw_flatten": {
+      "n": 50,
+      "vit4ts_mean": 0.7870883668203681,
+      "raw_flatten_mean": 0.7500131658129131,
+      "delta": 0.03707520100745485,
+      "vit4ts_wins": 21,
+      "wilcoxon_p": 0.6424100101810719
+    }
+  }
+}

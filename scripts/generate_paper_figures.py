@@ -26,7 +26,10 @@ logging.basicConfig(
 
 RESULTS_ROOT = Path("results")
 LEGACY_FIGURES_DIR = RESULTS_ROOT / "figures"
-FIGURES_DIR = Path(".sisyphus/artifacts/task-17-figures")
+# Write figures directly into the paper's figures/ directory (previously a
+# session-internal .sisyphus path, which leaked into the manuscript and broke
+# reproducibility). See paper/rebuttal_package/figures_runbook.md.
+FIGURES_DIR = Path("paper/figures")
 EVIDENCE_PATH = Path(".sisyphus/evidence/task-17-figures.txt")
 PAPER_PATH = Path("paper/neurips_main.tex")
 FIGURE_DPI = 320

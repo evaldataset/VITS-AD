@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "D": 25,
+    "group_sizes": [
+      3
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "note": "tests channel-group rendering as a fix for the D>3 RGB compression bottleneck identified in the controlled study."
+  },
+  "records": [
+    {
+      "D": 25,
+      "anomaly_type": "amplitude",
+      "locality": "local",
+      "n_seeds": 3,
+      "raw_flatten_mean": 0.9999479166666667,
+      "raw_flatten_std": 9.021097956086107e-05,
+      "vision_single_mean": 0.728125,
+      "vision_single_std": 0.03776695345718935,
+      "vision_group_k3_mean": 0.7835416666666667,
+      "vision_group_k3_std": 0.008114977793150988,
+      "group_recovers_over_single": 0.05541666666666667
+    },
+    {
+      "D": 25,
+      "anomaly_type": "structural",
+      "locality": "local",
+      "n_seeds": 3,
+      "raw_flatten_mean": 1.0,
+      "raw_flatten_std": 0.0,
+      "vision_single_mean": 0.8532291666666666,
+      "vision_single_std": 0.030185111404810738,
+      "vision_group_k3_mean": 0.8513541666666665,
+      "vision_group_k3_std": 0.01668976264310952,
+      "group_recovers_over_single": -0.001875000000000071
+    }
+  ]
+}

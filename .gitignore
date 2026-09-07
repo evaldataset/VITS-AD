@@ -34,11 +34,13 @@ env/
 .DS_Store
 
 # Datasets and outputs (never commit)
-data/
-results/
-results_local/
-results_nas/
-outputs/
+# Anchored to repo root (leading slash) so they do NOT also match source dirs
+# such as src/data/ and configs/data/, which MUST be tracked.
+/data/
+/results/
+/results_local/
+/results_nas/
+/outputs/
 checkpoints/
 *.pt
 *.pth
@@ -65,3 +67,46 @@ multirun/
 scratch/
 tmp/
 .tmp/
+
+# Claude Code / OMC internal state (do not track)
+.claude/
+.omc/
+.sisyphus
+**/.omc/
+configs/experiment/.omc/
+scripts/.omc/
+
+# Local baselines symlink (large / non-deterministic); /data/ and /outputs/
+# are already ignored (anchored) in the Datasets block above.
+/baselines/
+
+# Session-internal markdown artifacts (not part of paper deliverable)
+AUDIT.md
+CHECK.md
+NEURIPS_ASSESSMENT.md
+NEURIPS_FINAL_EVALUATION.md
+PLAN.md
+RESEARCH.md
+REVISION.md
+STATUS_*.md
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Session-internal: manuscript drafts, reviewer discussion, submission strategy.
+# Not part of the public reproducibility artifact.
+/paper/
+/REVIEW.md
+/REVIEW2.md
+/CLAUDE.md
+AGENTS.md

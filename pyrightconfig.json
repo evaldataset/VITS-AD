@@ -1,10 +1,13 @@
 {
-  "venvPath": ".",
+  "venvPath": "/home/suan/Projects/AI4TS/VITS",
   "venv": ".venv",
   "executionEnvironments": [
     {
-      "root": ".",
-      "extraPaths": ["."]
+      "root": "/home/suan/Projects/AI4TS/VITS",
+      "extraPaths": [
+        "/home/suan/Projects/AI4TS/VITS",
+        "/home/suan/Projects/AI4TS/VITS/.venv/lib/python3.12/site-packages"
+      ]
     }
   ]
 }

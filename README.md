@@ -1,159 +1,90 @@
-# VITS-AD
+# VITS — Vision-Informed Time Series Anomaly Detection
 
-**A Regime-Aware Evaluation Suite for Frozen-Vision Time-Series Anomaly Detection**
+Companion repository for the NeurIPS 2026 submission *"When Do Frozen Vision
+Representations Help Time-Series Anomaly Detection?"*
 
-This repository accompanies the NeurIPS 2026 Evaluations & Datasets (E&D)
-Track submission. It contains the method source tree, Hydra configurations,
-reproduction scripts, and the saved JSON ledgers underlying every claim in
-the main paper and supplement.
-
-The submission is **double-blind**; this repository is anonymous and routed
-through `https://anonymous.4open.science` for reviewer access. Author and
-institution information will be added upon acceptance.
-
-## Contribution scope (E&D Track)
-
-This is a **benchmark analysis and evaluation methodology** contribution. It
-does not introduce a new dataset; it (i) introduces and audits a previously
-missing baseline (raw-space Mahalanobis with Ledoit–Wolf shrinkage) for the
-frozen-vision time-series anomaly detection (TSAD) family, (ii) delivers a
-regime-aware evaluation protocol with paired Wilcoxon tests, multi-seed
-bootstrap CIs, paired-99 UCR comparison, and dataset-level compute
-accounting, and (iii) reports negative results on amplitude-dominated
-multivariate regimes (SMD/PSM/MSL).
-
-## Pipeline
-
-```
-Time-series window (W × D)
-  → Renderer (line plot or recurrence plot, deterministic)
-  → Frozen DINOv2-B/14 ViT  →  patch tokens (256 × 768)
-  → Dual-signal scorer
-       ├─ Mahalanobis distributional distance (primary, Ledoit–Wolf)
-       └─ patch-trajectory residual (regularizer)
-  → CalibGuard v3 (empirical FAR diagnostic, leak-free)
-  → Anomaly score
-```
+VITS renders sliding time-series windows as images, extracts patch tokens from
+a frozen DINOv2 backbone, and scores anomalies via dual-signal fusion of
+Mahalanobis distributional distance (primary) and trajectory prediction
+residuals (regularizer).
 
 ## Installation
 
 ```bash
-conda create -n vits-ad python=3.10 -y && conda activate vits-ad
+conda create -n vits python=3.10 -y && conda activate vits
 pip install -e .[full]
 ```
 
-Extras: `[vision]` (inference only), `[dev]` (tests + lint), `[full]` (both).
-`pip install -e .` registers `src/` as the importable `vits` package.
+The `full` extra installs the vision backbone (transformers, timm, Pillow) and
+the dev tools (pytest, ruff, mypy). Use `pip install -e .[vision]` for
+inference-only or `pip install -e .[dev]` for development without the backbone.
 
 ## Quick start
 
 ```bash
-# Train default (SMD entity machine-1-1, line plot, temporal-only)
+# 1. Train PatchTraj on the default dataset (SMD entity machine-1-1, line plot)
 python scripts/train_patchtraj.py
 
-# Detect with the saved checkpoint
+# 2. Run detection with the trained checkpoint
 python scripts/detect.py
 
-# Renderer-adaptive: spatial+dual on LP, temporal-only on RP
-python scripts/train_patchtraj.py data=smd render=line_plot \
-    patchtraj.spatial_attention=true \
-    scoring.dual_signal.enabled=true scoring.dual_signal.alpha=0.1
-python scripts/detect.py data=smd render=line_plot \
-    patchtraj.spatial_attention=true \
-    scoring.dual_signal.enabled=true scoring.dual_signal.alpha=0.1
+# 3. Override any Hydra config from the CLI
+python scripts/detect.py data=psm render=line_plot \
+    scoring.dual_signal.alpha=0.1 scoring.dual_signal.auto_alpha=false
 ```
 
-## Reproducing paper claims
+After installation no `PYTHONPATH` is required — `pip install -e .` registers
+`src/` as the `vits` package.
+
+## Reproducing paper tables
+
+All paper tables are regenerated from the canonical artifact tree:
 
 ```bash
-# 1. Raw-space Mahalanobis baseline (Tables 1–2 raw rows)
-python scripts/run_raw_mahalanobis_baseline.py
-
-# 2. Multi-seed runs (PSM/MSL/SMAP, 5 seeds)
-python scripts/run_multiseed.py
-
-# 3. Paired-99 UCR comparison
-python scripts/build_ucr_canonical.py
-python scripts/run_ucr_experiment.py
-
-# 4. Statistical tests (paired Wilcoxon, Cohen's d)
-python scripts/statistical_tests.py
-python scripts/statistical_tests_multiseed.py
-
-# 5. CalibGuard v3 (leak-free, empirical FAR diagnostic)
-python scripts/run_calibguard_v3.py
-
-# 6. Compute disclosure
-python scripts/run_fps_benchmark.py
-
-# 7. Regenerate paper tables and figures
-python scripts/regenerate_paper_tables.py
-python scripts/generate_paper_figures.py
+python scripts/regenerate_paper_tables.py     # Tables 1, 3, 4
+python scripts/build_ucr_canonical.py         # 109 eligible UCR series
+bash scripts/run_spatial_benchmark.sh         # 28-entity SMD benchmark (4 GPUs)
 ```
 
-A top-level driver that chains the above is `scripts/reproduce_paper.sh`.
+The `results/` directory layout is:
 
-## Datasets (existing public benchmarks; not redistributed)
-
-| Benchmark | Source                                              |
-|-----------|------------------------------------------------------|
-| SMD       | NetManAIOps / OmniAnomaly release                    |
-| PSM       | eBay RANSynCoders sample data                        |
-| SMAP, MSL | NASA JPL via `khundman/telemanom`                    |
-| UCR       | UCR Anomaly Archive (109 series, paired 99 reported) |
-
-Download helpers: `scripts/download_smd.py`, `scripts/download_psm.py`,
-`scripts/download_msl_smap.py`. The UCR archive must be obtained from its
-official source.
+```
+results/
+├── benchmark_smd_spatial/      # 28 entities × {LP, RP} × seed_42
+├── multiseed/                  # 5 seeds × {PSM, MSL, SMAP}
+├── ucr_canonical/              # 109 UCR series (eligible_list.json + per_series/)
+├── ablation/                   # alpha sweep, spatial-attention ablation
+└── reports/                    # aggregated paper tables
+```
 
 ## Tests
 
 ```bash
-pytest tests/                       # full suite
+pytest tests/                       # full test suite
 pytest tests/ -m "not slow"         # skip slow tests
-pytest tests/ --cov=src             # coverage
-ruff check src/ tests/ scripts/     # lint
-mypy src/                            # type check
-```
-
-## Repository layout
-
-```
-src/         method package (renderers, backbone, predictors, scorers, calibration)
-configs/     Hydra YAML (data / model / render / experiment groups)
-scripts/     training, detection, baselines, statistical tests, reproduction
-tests/       pytest suite (deterministic rendering, leak-free calibration, scorer math)
+pytest tests/ --cov=src             # coverage report
 ```
 
 ## Configuration
 
-All hyperparameters are Hydra YAML; override anything from the CLI:
+All hyperparameters use Hydra YAML:
 
-```bash
-python scripts/detect.py data=psm render=recurrence_plot \
-    model.pretrained=facebook/dinov2-base \
-    scoring.dual_signal.alpha=0.2 \
-    scoring.smooth_window=21
-```
-
-Key config groups:
-
-- `configs/data/{smd,psm,msl,smap,ucr}.yaml`
-- `configs/render/{line_plot,recurrence_plot,gaf,multi_view}.yaml`
-- `configs/model/{dinov2_base,clip_base,siglip_base}.yaml`
-- `configs/experiment/{vits_ad_default,vits_ad_dual_only,vits_ad_improved,vits_ad_spatial,vits_ad_sweep}.yaml`
+- `configs/data/{smd,psm,msl,smap,ucr}.yaml` — dataset settings
+- `configs/render/{line_plot,recurrence_plot,multi_view}.yaml` — renderer
+- `configs/model/{dinov2_base,clip_base}.yaml` — vision backbone
+- `configs/experiment/{patchtraj_default,patchtraj_spatial}.yaml` — full configs
 
 ## Citation
 
 ```bibtex
-@inproceedings{vitsad2026,
-  title  = {{VITS-AD}: A Regime-Aware Evaluation Suite for Frozen-Vision Time-Series Anomaly Detection},
-  author = {Anonymous},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track},
-  year   = {2026}
+@inproceedings{vits2026,
+  title={When Do Frozen Vision Representations Help Time-Series Anomaly Detection?},
+  author={Anonymous},
+  booktitle={NeurIPS},
+  year={2026}
 }
 ```
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see `LICENSE` for details.

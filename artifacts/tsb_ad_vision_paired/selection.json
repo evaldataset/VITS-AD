@@ -1,0 +1,842 @@
+[
+  {
+    "subset": "TSB-AD-U",
+    "series": "693_YAHOO_id_143_WebService_tr_500_1st_1003.csv",
+    "n_channels": 1,
+    "locality": 0.000700770847932726,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "688_YAHOO_id_138_WebService_tr_500_1st_482.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "161_Stock_id_13_Finance_tr_500_1st_3.csv",
+    "n_channels": 1,
+    "locality": 0.00010603448275862069,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "790_YAHOO_id_240_WebService_tr_500_1st_119.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "739_YAHOO_id_189_Synthetic_tr_500_1st_893.csv",
+    "n_channels": 1,
+    "locality": 0.0007037297677691766,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "701_YAHOO_id_151_Synthetic_tr_500_1st_893.csv",
+    "n_channels": 1,
+    "locality": 0.0007037297677691766,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "117_WSD_id_89_WebService_tr_3251_1st_3351.csv",
+    "n_channels": 1,
+    "locality": 0.00018319491939423546,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "092_WSD_id_64_WebService_tr_500_1st_118.csv",
+    "n_channels": 1,
+    "locality": 0.00047143953513869094,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "651_YAHOO_id_101_WebService_tr_500_1st_103.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "803_YAHOO_id_253_WebService_tr_500_1st_58.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "551_YAHOO_id_1_Synthetic_tr_500_1st_893.csv",
+    "n_channels": 1,
+    "locality": 0.0007037297677691766,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "791_YAHOO_id_241_WebService_tr_500_1st_593.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "569_YAHOO_id_19_WebService_tr_500_1st_30.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "727_YAHOO_id_177_WebService_tr_500_1st_82.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "098_WSD_id_70_WebService_tr_3575_1st_3675.csv",
+    "n_channels": 1,
+    "locality": 0.0001645097609124808,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "691_YAHOO_id_141_WebService_tr_500_1st_57.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "713_YAHOO_id_163_WebService_tr_500_1st_66.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "552_YAHOO_id_2_Synthetic_tr_500_1st_893.csv",
+    "n_channels": 1,
+    "locality": 0.0007037297677691766,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "672_YAHOO_id_122_WebService_tr_500_1st_857.csv",
+    "n_channels": 1,
+    "locality": 0.0005952380952380953,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "604_YAHOO_id_54_WebService_tr_500_1st_116.csv",
+    "n_channels": 1,
+    "locality": 0.0006613756613756614,
+    "stratum": "U_locality_t1"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "486_UCR_id_184_Medical_tr_1875_1st_5607.csv",
+    "n_channels": 1,
+    "locality": 0.0035995200639914677,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "520_UCR_id_218_Medical_tr_9567_1st_16000.csv",
+    "n_channels": 1,
+    "locality": 0.0026130810839060338,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "059_WSD_id_31_WebService_tr_4559_1st_9058.csv",
+    "n_channels": 1,
+    "locality": 0.0013709146742706734,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "663_YAHOO_id_113_Synthetic_tr_500_1st_658.csv",
+    "n_channels": 1,
+    "locality": 0.0014074595355383533,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "365_UCR_id_63_Facility_tr_50000_1st_210720.csv",
+    "n_channels": 1,
+    "locality": 0.0021671000866840037,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "573_YAHOO_id_23_Synthetic_tr_500_1st_623.csv",
+    "n_channels": 1,
+    "locality": 0.00211118930330753,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "488_UCR_id_186_Medical_tr_7500_1st_16000.csv",
+    "n_channels": 1,
+    "locality": 0.0033333333333333335,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "110_WSD_id_82_WebService_tr_500_1st_375.csv",
+    "n_channels": 1,
+    "locality": 0.003326752942896834,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "344_UCR_id_42_Sensor_tr_2851_1st_5365.csv",
+    "n_channels": 1,
+    "locality": 0.0013150973172014729,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "134_WSD_id_106_WebService_tr_4559_1st_7990.csv",
+    "n_channels": 1,
+    "locality": 0.0019375594063025519,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "452_UCR_id_150_Facility_tr_10000_1st_35774.csv",
+    "n_channels": 1,
+    "locality": 0.0025,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "107_WSD_id_79_WebService_tr_1095_1st_1195.csv",
+    "n_channels": 1,
+    "locality": 0.0029794545587482637,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "564_YAHOO_id_14_Synthetic_tr_500_1st_658.csv",
+    "n_channels": 1,
+    "locality": 0.0014074595355383533,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "271_IOPS_id_12_WebService_tr_500_1st_341.csv",
+    "n_channels": 1,
+    "locality": 0.001320582877959927,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "051_WSD_id_23_WebService_tr_3919_1st_5154.csv",
+    "n_channels": 1,
+    "locality": 0.0009568767542740495,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "386_UCR_id_84_Environment_tr_2046_1st_5703.csv",
+    "n_channels": 1,
+    "locality": 0.002932551319648094,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "742_YAHOO_id_192_Synthetic_tr_500_1st_658.csv",
+    "n_channels": 1,
+    "locality": 0.0014074595355383533,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "566_YAHOO_id_16_Synthetic_tr_500_1st_623.csv",
+    "n_channels": 1,
+    "locality": 0.00211118930330753,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "422_UCR_id_120_Facility_tr_50000_1st_150720.csv",
+    "n_channels": 1,
+    "locality": 0.0021689078714671826,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "297_TODS_id_11_Synthetic_tr_500_1st_7.csv",
+    "n_channels": 1,
+    "locality": 0.0020916666666666666,
+    "stratum": "U_locality_t2"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "027_NAB_id_27_Facility_tr_757_1st_2582.csv",
+    "n_channels": 1,
+    "locality": 0.06598482349059716,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "280_NEK_id_4_WebService_tr_500_1st_231.csv",
+    "n_channels": 1,
+    "locality": 0.013280521901211557,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "500_UCR_id_198_Facility_tr_7482_1st_23357.csv",
+    "n_channels": 1,
+    "locality": 0.012027663626340583,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "810_Exathlon_id_1_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 1,
+    "locality": 0.042082694778556945,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "336_UCR_id_34_Facility_tr_32191_1st_124159.csv",
+    "n_channels": 1,
+    "locality": 0.006414686992785418,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "839_Exathlon_id_30_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 1,
+    "locality": 0.042082694778556945,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "811_Exathlon_id_2_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 1,
+    "locality": 0.042082694778556945,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "211_SMD_id_34_Facility_tr_5925_1st_17580.csv",
+    "n_channels": 1,
+    "locality": 0.006792389149052862,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "483_UCR_id_181_Medical_tr_2499_1st_6508.csv",
+    "n_channels": 1,
+    "locality": 0.005001000200040008,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "169_Daphnet_id_1_HumanActivity_tr_9693_1st_20732.csv",
+    "n_channels": 1,
+    "locality": 0.009912140437750383,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "524_UCR_id_222_Medical_tr_1875_1st_5865.csv",
+    "n_channels": 1,
+    "locality": 0.014531395813891481,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "284_NEK_id_8_WebService_tr_500_1st_976.csv",
+    "n_channels": 1,
+    "locality": 0.08294501397949673,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "548_SMAP_id_18_Sensor_tr_2094_1st_5600.csv",
+    "n_channels": 1,
+    "locality": 0.004894937917860554,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "816_Exathlon_id_7_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 1,
+    "locality": 0.042082694778556945,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "424_UCR_id_122_Medical_tr_7464_1st_12190.csv",
+    "n_channels": 1,
+    "locality": 0.007702870156401755,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "531_SMAP_id_1_Sensor_tr_1811_1st_4510.csv",
+    "n_channels": 1,
+    "locality": 0.011181667586968525,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "357_UCR_id_55_Facility_tr_12500_1st_46600.csv",
+    "n_channels": 1,
+    "locality": 0.006,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "821_Exathlon_id_12_Facility_tr_6985_1st_7085.csv",
+    "n_channels": 1,
+    "locality": 0.020819310167420526,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "838_Exathlon_id_29_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 1,
+    "locality": 0.042082694778556945,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "364_UCR_id_62_Sensor_tr_2833_1st_5988.csv",
+    "n_channels": 1,
+    "locality": 0.008558320098817717,
+    "stratum": "U_locality_t3"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "090_SVDB_id_7_Medical_tr_12157_1st_12257.csv",
+    "n_channels": 2,
+    "locality": 0.003014117647058824,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "022_MITDB_id_4_Medical_tr_50000_1st_54253.csv",
+    "n_channels": 2,
+    "locality": 0.0017724000000000001,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "116_TAO_id_1_Environment_tr_500_1st_3.csv",
+    "n_channels": 3,
+    "locality": 0.00010603448275862069,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "124_TAO_id_9_Environment_tr_500_1st_1.csv",
+    "n_channels": 3,
+    "locality": 0.00010592105263157894,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "114_SVDB_id_31_Medical_tr_25000_1st_63090.csv",
+    "n_channels": 2,
+    "locality": 0.00497,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "027_MITDB_id_9_Medical_tr_25000_1st_52255.csv",
+    "n_channels": 2,
+    "locality": 0.00433,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "093_SVDB_id_10_Medical_tr_500_1st_37.csv",
+    "n_channels": 2,
+    "locality": 0.0005170355902777778,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "111_SVDB_id_28_Medical_tr_1791_1st_1891.csv",
+    "n_channels": 2,
+    "locality": 0.0006579262452107279,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "107_SVDB_id_24_Medical_tr_32805_1st_32905.csv",
+    "n_channels": 2,
+    "locality": 0.0005174757599580713,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "102_SVDB_id_19_Medical_tr_50000_1st_107354.csv",
+    "n_channels": 2,
+    "locality": 0.009675925925925926,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "098_SVDB_id_15_Medical_tr_500_1st_303.csv",
+    "n_channels": 2,
+    "locality": 0.0005236670684113866,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "100_SVDB_id_17_Medical_tr_17803_1st_17903.csv",
+    "n_channels": 2,
+    "locality": 0.0012088957055214724,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "095_SVDB_id_12_Medical_tr_6264_1st_6364.csv",
+    "n_channels": 2,
+    "locality": 0.0007199074074074074,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "105_SVDB_id_22_Medical_tr_500_1st_417.csv",
+    "n_channels": 2,
+    "locality": 0.001257549019607843,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "092_SVDB_id_9_Medical_tr_2674_1st_2774.csv",
+    "n_channels": 2,
+    "locality": 0.0020202323717948716,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "082_LTDB_id_4_Medical_tr_4456_1st_4556.csv",
+    "n_channels": 2,
+    "locality": 0.0016159,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "094_SVDB_id_11_Medical_tr_20100_1st_23611.csv",
+    "n_channels": 2,
+    "locality": 0.0014692164179104478,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "101_SVDB_id_18_Medical_tr_1851_1st_1951.csv",
+    "n_channels": 2,
+    "locality": 0.0008628043552812071,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "085_SVDB_id_2_Medical_tr_50000_1st_54982.csv",
+    "n_channels": 2,
+    "locality": 0.0006531737329434699,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "023_MITDB_id_5_Medical_tr_25000_1st_36913.csv",
+    "n_channels": 2,
+    "locality": 0.00465,
+    "stratum": "M_D2-5"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "034_GHL_id_3_Sensor_tr_50000_1st_122001.csv",
+    "n_channels": 19,
+    "locality": 0.0047974760126199365,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "037_GHL_id_6_Sensor_tr_50000_1st_80001.csv",
+    "n_channels": 19,
+    "locality": 0.004664976675116624,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "046_GHL_id_15_Sensor_tr_50000_1st_156462.csv",
+    "n_channels": 19,
+    "locality": 0.0061949690251548745,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "001_Genesis_id_1_Sensor_tr_4055_1st_15538.csv",
+    "n_channels": 18,
+    "locality": 0.0010275380189066997,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "196_Exathlon_id_23_Facility_tr_11665_1st_13484.csv",
+    "n_channels": 18,
+    "locality": 0.020917273896270894,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "043_GHL_id_12_Sensor_tr_39938_1st_40038.csv",
+    "n_channels": 19,
+    "locality": 0.005254973725131375,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "053_GHL_id_22_Sensor_tr_50000_1st_126448.csv",
+    "n_channels": 19,
+    "locality": 0.0064919675401623,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "189_Exathlon_id_16_Facility_tr_11663_1st_13482.csv",
+    "n_channels": 12,
+    "locality": 0.02106240845925767,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "198_Exathlon_id_25_Facility_tr_12538_1st_12638.csv",
+    "n_channels": 19,
+    "locality": 0.013850510804774448,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "048_GHL_id_17_Sensor_tr_50000_1st_154001.csv",
+    "n_channels": 19,
+    "locality": 0.0044787276063619685,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "177_Exathlon_id_4_Facility_tr_11665_1st_13484.csv",
+    "n_channels": 18,
+    "locality": 0.020917273896270894,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "054_GHL_id_23_Sensor_tr_50000_1st_135001.csv",
+    "n_channels": 19,
+    "locality": 0.006223302216822249,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "143_CATSv2_id_6_Sensor_tr_50000_1st_60232.csv",
+    "n_channels": 17,
+    "locality": 0.002857142857142857,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "045_GHL_id_14_Sensor_tr_50000_1st_85076.csv",
+    "n_channels": 19,
+    "locality": 0.004427477862610687,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "047_GHL_id_16_Sensor_tr_50000_1st_77001.csv",
+    "n_channels": 19,
+    "locality": 0.004546643933447,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "192_Exathlon_id_19_Facility_tr_11665_1st_13484.csv",
+    "n_channels": 18,
+    "locality": 0.020917273896270894,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "184_Exathlon_id_11_Facility_tr_11665_1st_13484.csv",
+    "n_channels": 18,
+    "locality": 0.020917273896270894,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "181_Exathlon_id_8_Facility_tr_11663_1st_13482.csv",
+    "n_channels": 12,
+    "locality": 0.02106240845925767,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "056_GHL_id_25_Sensor_tr_50000_1st_105568.csv",
+    "n_channels": 19,
+    "locality": 0.005239973800130999,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "035_GHL_id_4_Sensor_tr_50000_1st_90001.csv",
+    "n_channels": 19,
+    "locality": 0.0045216440584463745,
+    "stratum": "M_D11-20"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "147_SMAP_id_4_Sensor_tr_2160_1st_6449.csv",
+    "n_channels": 25,
+    "locality": 0.014004629629629629,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "200_Exathlon_id_27_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 31,
+    "locality": 0.042082694778556945,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "007_MSL_id_6_Sensor_tr_980_1st_3550.csv",
+    "n_channels": 55,
+    "locality": 0.038500764915859256,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "179_Exathlon_id_6_Facility_tr_11665_1st_13484.csv",
+    "n_channels": 31,
+    "locality": 0.020917273896270894,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "154_SMAP_id_11_Sensor_tr_2117_1st_4770.csv",
+    "n_channels": 25,
+    "locality": 0.014287401109930334,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "062_SMD_id_6_Facility_tr_7180_1st_15131.csv",
+    "n_channels": 38,
+    "locality": 0.006110298725715479,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "171_SWaT_id_1_Sensor_tr_3749_1st_9522.csv",
+    "n_channels": 66,
+    "locality": 0.022072552680714858,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "163_SMAP_id_20_Sensor_tr_2051_1st_4575.csv",
+    "n_channels": 25,
+    "locality": 0.0226691042047532,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "061_SMD_id_5_Facility_tr_7176_1st_15144.csv",
+    "n_channels": 38,
+    "locality": 0.0079605629877369,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "064_SMD_id_8_Facility_tr_2272_1st_2372.csv",
+    "n_channels": 38,
+    "locality": 0.003688157336226006,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "186_Exathlon_id_13_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 31,
+    "locality": 0.042082694778556945,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "010_MSL_id_9_Sensor_tr_554_1st_1172.csv",
+    "n_channels": 55,
+    "locality": 0.03112313937753721,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "075_SMD_id_19_Facility_tr_564_1st_664.csv",
+    "n_channels": 38,
+    "locality": 0.0008798953409858204,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "161_SMAP_id_18_Sensor_tr_2075_1st_5550.csv",
+    "n_channels": 25,
+    "locality": 0.04227896892315105,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "195_Exathlon_id_22_Facility_tr_10766_1st_12590.csv",
+    "n_channels": 31,
+    "locality": 0.042082694778556945,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "158_SMAP_id_15_Sensor_tr_2075_1st_5610.csv",
+    "n_channels": 25,
+    "locality": 0.007951807228915662,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "077_SMD_id_21_Facility_tr_3026_1st_3126.csv",
+    "n_channels": 38,
+    "locality": 0.0029492834698662965,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "078_SMD_id_22_Facility_tr_500_1st_326.csv",
+    "n_channels": 38,
+    "locality": 0.0033992513205782946,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "063_SMD_id_7_Facility_tr_5923_1st_6506.csv",
+    "n_channels": 38,
+    "locality": 0.0037984299822739933,
+    "stratum": "M_D21-1000"
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "067_SMD_id_11_Facility_tr_1980_1st_2080.csv",
+    "n_channels": 38,
+    "locality": 0.005300327416347325,
+    "stratum": "M_D21-1000"
+  }
+]

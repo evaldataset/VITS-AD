@@ -29,6 +29,7 @@ from src.data.msl import MSLDataset
 from src.data.psm import PSMDataset
 from src.data.smd import SMDDataset
 from src.data.smap import SMAPDataset
+from src.data.swat import SWaTDataset
 from src.evaluation.metrics import compute_all_metrics
 from src.scoring.patchtraj_scorer import smooth_scores
 
@@ -524,6 +525,25 @@ def load_smap() -> tuple[
     return ds.train_windows, ds.test_windows, ds.test_labels
 
 
+def load_swat() -> tuple[
+    npt.NDArray[np.float64], npt.NDArray[np.float64], npt.NDArray[np.int64]
+]:
+    """Load SWaT train/test windows.
+
+    Returns:
+        (train_windows, test_windows, test_labels)
+    """
+    LOGGER.info("Loading SWaT...")
+    ds = SWaTDataset(
+        raw_dir=DATA_ROOT / "swat",
+        window_size=WINDOW_SIZE,
+        stride=STRIDE,
+        normalize=True,
+        norm_method="standard",
+    )
+    return ds.train_windows, ds.test_windows, ds.test_labels
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -552,6 +572,7 @@ def main() -> None:
         ("psm", load_psm),
         ("msl", load_msl),
         ("smap", load_smap),
+        ("swat", load_swat),
     ]
 
     all_results: dict[str, dict[str, dict[str, Any]]] = {}
