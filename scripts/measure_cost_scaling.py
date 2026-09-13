@@ -45,6 +45,13 @@ OUT = Path("results/cost_scaling")
 D_GRID = (1, 5, 10, 20, 25, 40)
 N_WINDOW_GRID = (100, 250, 500, 1000)
 REPEATS = 3
+#: Token dimension the rendered arm fits its Ledoit-Wolf model in (DINOv2-base).
+#: The rendered arm pays this fixed per-series cost regardless of D, so a fair
+#: crossover against the raw control has to charge it.
+RENDERED_TOKEN_DIM = 768
+#: Rendering is milliseconds per call, so its per-run variance is large relative
+#: to the signal. Use many more repeats there than for the second-scale fits.
+RENDER_REPEATS = 15
 
 
 def _time(fn, repeats: int = REPEATS) -> float:
@@ -62,7 +69,8 @@ def measure_render(rng: np.random.Generator) -> list[dict[str, Any]]:
     rows = []
     for d in D_GRID:
         w = rng.standard_normal((WINDOW, d)).astype(np.float32)
-        sec = _time(lambda: render_line_plot(w))
+        render_line_plot(w)  # warm up matplotlib's font and backend caches
+        sec = _time(lambda: render_line_plot(w), repeats=RENDER_REPEATS)
         rows.append({"D": d, "ms_per_window": sec * 1e3})
         LOGGER.info("  render D=%-3d %.1f ms/window", d, sec * 1e3)
     return rows
@@ -131,6 +139,80 @@ def measure_backbone(rng: np.random.Generator) -> list[dict[str, Any]]:
     return rows
 
 
+def measure_rendered_fit(rng: np.random.Generator) -> dict[str, Any]:
+    """Ledoit-Wolf cost in the rendered arm's own token space.
+
+    Args:
+        rng: Source of the synthetic tokens.
+
+    Returns:
+        Fit and score seconds for a ``RENDERED_TOKEN_DIM``-dimensional model.
+    """
+    a = rng.standard_normal((400, RENDERED_TOKEN_DIM))
+    b = rng.standard_normal((400, RENDERED_TOKEN_DIM))
+    fits, scores = [], []
+    for _ in range(REPEATS):
+        scorer = RawMahalanobisScorer()
+        t0 = time.perf_counter()
+        scorer.fit(a)
+        fits.append(time.perf_counter() - t0)
+        t0 = time.perf_counter()
+        scorer.score(b)
+        scores.append(time.perf_counter() - t0)
+    out = {"feature_dim": RENDERED_TOKEN_DIM,
+           "fit_seconds": float(np.median(fits)),
+           "score_seconds": float(np.median(scores))}
+    LOGGER.info("  rendered-arm fit d=%d %.3f s", RENDERED_TOKEN_DIM,
+                out["fit_seconds"])
+    return out
+
+
+def derive_crossover(render: list[dict[str, Any]], raw: list[dict[str, Any]],
+                     backbone: list[dict[str, Any]],
+                     rendered_fit: dict[str, Any]) -> list[dict[str, Any]]:
+    """Windows beyond which the flattened control is cheaper than rendering.
+
+    Both arms are charged for their own per-series Ledoit-Wolf fit and their own
+    per-window cost, so the crossover is the window count at which the raw fit's
+    fixed cost is repaid by its cheaper per-window scoring.
+
+    Args:
+        render: Rows from :func:`measure_render`.
+        raw: Rows from :func:`measure_raw`.
+        backbone: Rows from :func:`measure_backbone`.
+        rendered_fit: Row from :func:`measure_rendered_fit`.
+
+    Returns:
+        One row per channel count, with ``crossover_windows`` set to ``None``
+        where the raw control is cheaper at any length.
+    """
+    if not backbone:
+        LOGGER.warning("no backbone timings; skipping crossover derivation")
+        return []
+    per_window_backbone = backbone[-1]["ms_per_window"]
+    fixed_v = rendered_fit["fit_seconds"] * 1e3
+    score_v = rendered_fit["score_seconds"] / 400 * 1e3
+    flat = {r["D"]: r for r in raw if r["variant"] == "flattened"}
+    rows = []
+    for entry in render:
+        d = entry["D"]
+        if d not in flat:
+            continue
+        per_window_v = entry["ms_per_window"] + per_window_backbone + score_v
+        per_window_r = flat[d]["score_seconds"] / 400 * 1e3
+        fixed_r = flat[d]["fit_seconds"] * 1e3
+        n_star = (fixed_r - fixed_v) / (per_window_v - per_window_r)
+        rows.append({
+            "D": d, "rendered_ms_per_window": per_window_v,
+            "raw_fit_ms": fixed_r, "raw_score_ms_per_window": per_window_r,
+            "crossover_windows": None if n_star <= 0 else float(n_star),
+        })
+        LOGGER.info("  crossover D=%-3d rendered=%.1f ms/win raw_fit=%.0f ms N*=%s",
+                    d, per_window_v, fixed_r,
+                    "always raw" if n_star <= 0 else f"{n_star:.0f}")
+    return rows
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     rng = np.random.default_rng(0)
@@ -140,6 +222,10 @@ def main() -> None:
     raw = measure_raw(rng)
     LOGGER.info("frozen backbone cost vs window count")
     backbone = measure_backbone(rng)
+    LOGGER.info("rendered arm's own Ledoit-Wolf fit")
+    rendered_fit = measure_rendered_fit(rng)
+    LOGGER.info("cost crossover between the two arms")
+    crossover = derive_crossover(render, raw, backbone, rendered_fit)
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "cost_scaling.json").write_text(json.dumps({
@@ -147,6 +233,8 @@ def main() -> None:
         "render_vs_channels": render,
         "raw_mahalanobis_vs_channels": raw,
         "backbone_vs_windows": backbone,
+        "rendered_arm_fit": rendered_fit,
+        "crossover_vs_rendered": crossover,
     }, indent=2) + "\n", encoding="utf-8")
     LOGGER.info("wrote %s", OUT / "cost_scaling.json")
 
