@@ -1,0 +1,43 @@
+{
+  "subset": "TSB-AD-U",
+  "n_series": 40,
+  "max_test_points": 8000,
+  "by_stride": {
+    "1": {
+      "VUS-PR": {
+        "n": 40,
+        "flatten_mean": 0.5144116310333352,
+        "mean_pool_mean": 0.30921527259588,
+        "delta": 0.20519635843745515,
+        "flatten_wins": 33,
+        "wilcoxon_p": 3.2021893499722314e-05
+      },
+      "AUC-ROC": {
+        "n": 40,
+        "flatten_mean": 0.6863504642882272,
+        "mean_pool_mean": 0.5454217680761408,
+        "delta": 0.1409286962120865,
+        "flatten_wins": 28,
+        "wilcoxon_p": 0.0009899076010881343
+      }
+    },
+    "10": {
+      "VUS-PR": {
+        "n": 40,
+        "flatten_mean": 0.6393781008287668,
+        "mean_pool_mean": 0.4803724919766779,
+        "delta": 0.1590056088520888,
+        "flatten_wins": 30,
+        "wilcoxon_p": 0.0003729440519236088
+      },
+      "AUC-ROC": {
+        "n": 40,
+        "flatten_mean": 0.6841219684229614,
+        "mean_pool_mean": 0.5418416423710175,
+        "delta": 0.1422803260519437,
+        "flatten_wins": 31,
+        "wilcoxon_p": 0.0003932548554014972
+      }
+    }
+  }
+}

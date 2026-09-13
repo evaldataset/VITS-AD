@@ -1,11 +1,13 @@
 """Generate the VLDB paper's figures from the released artifacts.
 
-Two figures carry the paper's central claims:
+Three figures carry the paper's central claims:
   fig_baseline_inversion : the rendered pipeline beats mean-pooled raw scoring and
                            loses to flattened raw scoring on the same series --
                            the comparison inverts with the control.
   fig_amplitude_law      : raw-space Mahalanobis is an amplitude-extremity detector
                            (accuracy tracks z_ratio) while rendering is insensitive.
+  fig_cost_scaling       : how rendering, the raw control and the frozen backbone
+                           scale with channel count and window count.
 
 Both read only from artifacts/, so the figures regenerate from the public package
 without the raw datasets or a GPU:
@@ -114,6 +116,74 @@ def fig_amplitude_law(out_dir: Path) -> None:
     LOGGER.info("amplitude law: n=%d", z.size)
 
 
+def fig_cost_scaling(out_dir: Path) -> None:
+    """Three-panel cost scaling: rendering, the raw control, and the backbone.
+
+    Args:
+        out_dir: Directory to write the figure into.
+    """
+    src = ART / "cost_scaling" / "cost_scaling.json"
+    if not src.exists():
+        LOGGER.warning("cost scaling artifact missing; skipping figure")
+        return
+    data = json.loads(src.read_text())
+
+    fig, axes = plt.subplots(1, 3, figsize=(10.5, 2.9))
+
+    ax = axes[0]
+    rend = data["render_vs_channels"]
+    xs = [r["D"] for r in rend]
+    ys = [r["ms_per_window"] for r in rend]
+    ax.plot(xs, ys, "o-", color="#1f77b4", lw=1.8, ms=5)
+    ax.set_xlabel("channels $D$", fontsize=9)
+    ax.set_ylabel("ms per window", fontsize=9)
+    ax.set_title("(a) Line-plot rendering", fontsize=10)
+
+    ax = axes[1]
+    raw = data["raw_mahalanobis_vs_channels"]
+    for variant, colour, marker in (("flattened", "#d62728", "o"),
+                                    ("mean_pooled", "#2ca02c", "s")):
+        rows = [r for r in raw if r["variant"] == variant]
+        ax.plot([r["feature_dim"] for r in rows],
+                [r.get("fit_seconds", r["seconds"]) for r in rows],
+                marker + "-", color=colour, lw=1.8, ms=5,
+                label=f"{variant.replace('_', '-')} (fit)")
+        if "score_seconds" in rows[0]:
+            ax.plot([r["feature_dim"] for r in rows],
+                    [r["score_seconds"] for r in rows],
+                    marker + ":", color=colour, lw=1.2, ms=3, alpha=0.7,
+                    label=f"{variant.replace('_', '-')} (score)")
+    ax.axvline(2000, color="0.4", lw=1, ls="--")
+    ax.annotate("flatten\ndim cap", xy=(2000, 0.02), xycoords=("data", "axes fraction"),
+                xytext=(-4, 0), textcoords="offset points", ha="right", va="bottom",
+                fontsize=8, color="0.3")
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlabel(r"feature dimension $W\cdot D$", fontsize=9)
+    ax.set_ylabel("seconds", fontsize=9)
+    ax.set_title("(b) Ledoit-Wolf raw control", fontsize=10)
+    ax.legend(fontsize=6.5, frameon=False, loc="upper left")
+
+    ax = axes[2]
+    bb = data["backbone_vs_windows"]
+    if bb:
+        ax.plot([r["n_windows"] for r in bb], [r["seconds"] for r in bb],
+                "o-", color="#9467bd", lw=1.8, ms=5)
+        ax.set_xlabel("windows encoded", fontsize=9)
+        ax.set_ylabel("seconds", fontsize=9)
+    ax.set_title("(c) Frozen backbone", fontsize=10)
+
+    for ax in axes:
+        ax.tick_params(labelsize=8)
+        ax.grid(alpha=0.25, lw=0.6)
+    fig.tight_layout()
+    for ext in ("pdf", "png"):
+        fig.savefig(out_dir / f"fig_cost_scaling.{ext}", bbox_inches="tight", dpi=200)
+    plt.close(fig)
+    LOGGER.info("cost scaling: rendering %.1f-%.1f ms/window over D=%d-%d",
+                ys[0], ys[-1], xs[0], xs[-1])
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     parser = argparse.ArgumentParser()
@@ -124,6 +194,7 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     fig_baseline_inversion(out_dir)
     fig_amplitude_law(out_dir)
+    fig_cost_scaling(out_dir)
     LOGGER.info("wrote figures to %s", out_dir)
 
 
