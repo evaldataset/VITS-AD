@@ -1,0 +1,41 @@
+{
+  "paired_99": {
+    "n": 99,
+    "rendered_mean": 0.8873114308282801,
+    "raw_flatten_mean": 0.6665271344783862,
+    "delta": 0.22078429634989377,
+    "rendered_wins": 70,
+    "wilcoxon_p": 9.11016012606111e-08
+  },
+  "completed_10": {
+    "n": 10,
+    "rendered_mean": 0.8072303437593268,
+    "raw_flatten_mean": 0.7673248433868802,
+    "rendered_wins": 8,
+    "note": "stratified window subsample; differs from canonical protocol"
+  },
+  "all_109_mixed_protocol": {
+    "n": 109,
+    "rendered_mean": 0.8799645421063578,
+    "raw_flatten_mean": 0.6757746307085233,
+    "delta": 0.20418991139783443,
+    "rendered_wins": 78,
+    "wilcoxon_p": 5.140417184271036e-08
+  },
+  "imputation_bounds_same_109": {
+    "impute_chance": 0.17600364132817137,
+    "impute_zero": 0.1301320816951439
+  },
+  "missing_series": [
+    "239_UCR_Anomaly_taichidbS0715Master_190037_593450_593514",
+    "240_UCR_Anomaly_taichidbS0715Master_240030_884100_884200",
+    "241_UCR_Anomaly_taichidbS0715Master_250000_837400_839100",
+    "243_UCR_Anomaly_tilt12744mtable_100000_203355_203400",
+    "245_UCR_Anomaly_tilt12754table_100211_270800_271070",
+    "246_UCR_Anomaly_tilt12755mtable_100211_270800_271070",
+    "247_UCR_Anomaly_tilt12755mtable_50211_121900_121980",
+    "248_UCR_Anomaly_weallwalk_2000_4702_4707",
+    "249_UCR_Anomaly_weallwalk_2753_8285_8315",
+    "250_UCR_Anomaly_weallwalk_2951_7290_7296"
+  ]
+}

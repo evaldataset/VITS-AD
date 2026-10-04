@@ -1,0 +1,25 @@
+{
+  "n": 186,
+  "frozen_threshold": 50.92496048914751,
+  "vision_selected_fraction": 0.7419354838709677,
+  "means": {
+    "rule": 0.7713503756115225,
+    "always_vision": 0.7698405071539448,
+    "always_raw": 0.7386368328956291,
+    "oracle": 0.8348432944282016
+  },
+  "H1_rule_vs_always_vision": {
+    "delta": 0.0015098684575777994,
+    "p": 0.3141345952728414,
+    "confirmed": false
+  },
+  "H2_rule_vs_always_raw": {
+    "delta": 0.032713542715893475,
+    "p": 0.0060184810246915865
+  },
+  "H3_tail_ratio_vs_delta": {
+    "spearman": -0.1751045475062007,
+    "p": 0.016825089946998956
+  },
+  "oracle_headroom_recovered": 0.02322774946876403
+}

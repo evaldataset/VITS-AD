@@ -1,0 +1,7 @@
+{
+  "proxy": "tail_ratio",
+  "threshold": 50.92496048914751,
+  "discovery_n": 100,
+  "discovery_realized_auc": 0.8034362022628687,
+  "rule": "use vision iff tail_ratio < threshold"
+}

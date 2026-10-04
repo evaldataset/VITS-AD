@@ -1,0 +1,135 @@
+{
+  "detector": "Sub_PCA",
+  "n_records": 100,
+  "status_counts": {
+    "ok": 60,
+    "failed": 0,
+    "not_applicable": 40
+  },
+  "all": {
+    "vs_raw_flatten": {
+      "VUS-PR": {
+        "n": 60,
+        "detector_mean": 0.5784673074046985,
+        "reference_mean": 0.7326473625136077,
+        "delta": -0.15418005510890923,
+        "delta_ci95": [
+          -0.2363179229439669,
+          -0.07457185824851549
+        ],
+        "detector_wins": 15,
+        "ties": 1,
+        "wilcoxon_p": 0.0001220689365795332
+      },
+      "AUC-ROC": {
+        "n": 60,
+        "detector_mean": 0.6627687354724208,
+        "reference_mean": 0.8269659155915747,
+        "delta": -0.1641971801191539,
+        "delta_ci95": [
+          -0.2343415852790879,
+          -0.09761927264708632
+        ],
+        "detector_wins": 13,
+        "ties": 1,
+        "wilcoxon_p": 2.4502549583277474e-05
+      }
+    },
+    "vs_vision": {
+      "VUS-PR": {
+        "n": 60,
+        "detector_mean": 0.5784673074046985,
+        "reference_mean": 0.7309182594183266,
+        "delta": -0.15245095201362818,
+        "delta_ci95": [
+          -0.2503789628047163,
+          -0.05972928034170853
+        ],
+        "detector_wins": 20,
+        "ties": 1,
+        "wilcoxon_p": 0.004539020371547469
+      },
+      "AUC-ROC": {
+        "n": 60,
+        "detector_mean": 0.6627687354724208,
+        "reference_mean": 0.8692034303508254,
+        "delta": -0.20643469487840443,
+        "delta_ci95": [
+          -0.2963955122074133,
+          -0.11830437688456209
+        ],
+        "detector_wins": 19,
+        "ties": 1,
+        "wilcoxon_p": 0.00017587976398621616
+      }
+    }
+  },
+  "univariate": {
+    "vs_raw_flatten": {
+      "VUS-PR": {
+        "n": 60,
+        "detector_mean": 0.5784673074046985,
+        "reference_mean": 0.7326473625136077,
+        "delta": -0.15418005510890923,
+        "delta_ci95": [
+          -0.2363179229439669,
+          -0.07457185824851549
+        ],
+        "detector_wins": 15,
+        "ties": 1,
+        "wilcoxon_p": 0.0001220689365795332
+      },
+      "AUC-ROC": {
+        "n": 60,
+        "detector_mean": 0.6627687354724208,
+        "reference_mean": 0.8269659155915747,
+        "delta": -0.1641971801191539,
+        "delta_ci95": [
+          -0.2343415852790879,
+          -0.09761927264708632
+        ],
+        "detector_wins": 13,
+        "ties": 1,
+        "wilcoxon_p": 2.4502549583277474e-05
+      }
+    },
+    "vs_vision": {
+      "VUS-PR": {
+        "n": 60,
+        "detector_mean": 0.5784673074046985,
+        "reference_mean": 0.7309182594183266,
+        "delta": -0.15245095201362818,
+        "delta_ci95": [
+          -0.2503789628047163,
+          -0.05972928034170853
+        ],
+        "detector_wins": 20,
+        "ties": 1,
+        "wilcoxon_p": 0.004539020371547469
+      },
+      "AUC-ROC": {
+        "n": 60,
+        "detector_mean": 0.6627687354724208,
+        "reference_mean": 0.8692034303508254,
+        "delta": -0.20643469487840443,
+        "delta_ci95": [
+          -0.2963955122074133,
+          -0.11830437688456209
+        ],
+        "detector_wins": 19,
+        "ties": 1,
+        "wilcoxon_p": 0.00017587976398621616
+      }
+    }
+  },
+  "multivariate": {
+    "vs_raw_flatten": {
+      "VUS-PR": null,
+      "AUC-ROC": null
+    },
+    "vs_vision": {
+      "VUS-PR": null,
+      "AUC-ROC": null
+    }
+  }
+}

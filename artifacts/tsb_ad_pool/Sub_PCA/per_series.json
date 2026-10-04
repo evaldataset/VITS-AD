@@ -1,0 +1,1902 @@
+[
+  {
+    "subset": "TSB-AD-U",
+    "series": "693_YAHOO_id_143_WebService_tr_500_1st_1003.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9838047517125704,
+      "VUS-ROC": 0.9956045639582889,
+      "Affiliation-F": 0.9188873268358944,
+      "Event-based-F1": 0.8163265306122444,
+      "R-based-F1": 0.819672131147541,
+      "Standard-F1": 0.8163216993205551,
+      "PA-F1": 0.8333333333333334,
+      "AUC-ROC": 0.9380952380952381,
+      "AUC-PR": 0.7834290581981737
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "161_Stock_id_13_Finance_tr_500_1st_3.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 941,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.999994195230449,
+      "VUS-ROC": 0.9990457398742436,
+      "Affiliation-F": 0.9979903991028791,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.7699662065435665,
+      "Standard-F1": 0.9967967058331547,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9803921568627451,
+      "AUC-PR": 0.9998724902463708
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "739_YAHOO_id_189_Synthetic_tr_500_1st_893.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.3425564831719503,
+      "VUS-ROC": 0.7075156159501106,
+      "Affiliation-F": 0.6743331736144381,
+      "Event-based-F1": 0.29411764705882326,
+      "R-based-F1": 0.207527975584944,
+      "Standard-F1": 0.2985049231670715,
+      "PA-F1": 0.31746031746031744,
+      "AUC-ROC": 0.3972602739726027,
+      "AUC-PR": 0.10910964078195963
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "117_WSD_id_89_WebService_tr_3251_1st_3351.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 14,
+    "n_test_windows": 931,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.4743386662369646,
+      "VUS-ROC": 0.9769419557147646,
+      "Affiliation-F": 0.9728660992412416,
+      "Event-based-F1": 0.1971830985915491,
+      "R-based-F1": 0.33333333333333337,
+      "Standard-F1": 0.19718132118245693,
+      "PA-F1": 0.19718309859154928,
+      "AUC-ROC": 0.9383116883116883,
+      "AUC-PR": 0.109375
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "651_YAHOO_id_101_WebService_tr_500_1st_103.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.7452918581052287,
+      "VUS-ROC": 0.8736585075872954,
+      "Affiliation-F": 0.7978675425824082,
+      "Event-based-F1": 0.5233644859813079,
+      "R-based-F1": 0.5864746048077822,
+      "Standard-F1": 0.5225186624747457,
+      "PA-F1": 0.6785714285714286,
+      "AUC-ROC": 0.5189655172413794,
+      "AUC-PR": 0.29575170534939144
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "551_YAHOO_id_1_Synthetic_tr_500_1st_893.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.39493470655674734,
+      "VUS-ROC": 0.7137280457334507,
+      "Affiliation-F": 0.6879290022880117,
+      "Event-based-F1": 0.30303030303030276,
+      "R-based-F1": 0.44719904648390935,
+      "Standard-F1": 0.30302773188591126,
+      "PA-F1": 0.31746031746031744,
+      "AUC-ROC": 0.4006849315068493,
+      "AUC-PR": 0.14129148629148627
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "569_YAHOO_id_19_WebService_tr_500_1st_30.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9966618134002768,
+      "VUS-ROC": 0.9986636325346375,
+      "Affiliation-F": 0.9805206642664028,
+      "Event-based-F1": 0.9499999999999995,
+      "R-based-F1": 0.9407621804148576,
+      "Standard-F1": 0.9397540543158567,
+      "PA-F1": 0.9512195121951219,
+      "AUC-ROC": 0.9714285714285713,
+      "AUC-PR": 0.9121329926394318
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "098_WSD_id_70_WebService_tr_3575_1st_3675.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 15,
+    "n_test_windows": 971,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.09129643709113741,
+      "VUS-ROC": 0.5161830988553591,
+      "Affiliation-F": 0.6768242363983317,
+      "Event-based-F1": 0.0433369447453954,
+      "R-based-F1": 0.337187025170113,
+      "Standard-F1": 0.04338352351476995,
+      "PA-F1": 0.04778156996587031,
+      "AUC-ROC": 0.3367245005257623,
+      "AUC-PR": 0.016093110813693468
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "713_YAHOO_id_163_WebService_tr_500_1st_66.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9678626655217882,
+      "VUS-ROC": 0.9550174057666218,
+      "Affiliation-F": 0.8572194919346264,
+      "Event-based-F1": 0.7924528301886787,
+      "R-based-F1": 0.6586420213904276,
+      "Standard-F1": 0.7924480455967058,
+      "PA-F1": 0.7924528301886793,
+      "AUC-ROC": 0.619047619047619,
+      "AUC-PR": 0.7349116996174215
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "672_YAHOO_id_122_WebService_tr_500_1st_857.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.19479804398221998,
+      "VUS-ROC": 0.5571128907242251,
+      "Affiliation-F": 0.6676567185491926,
+      "Event-based-F1": 0.20930232558139514,
+      "R-based-F1": 0.4651162790697675,
+      "Standard-F1": 0.20689451712926957,
+      "PA-F1": 0.22727272727272727,
+      "AUC-ROC": 0.3055555555555555,
+      "AUC-PR": 0.1163059163059163
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "486_UCR_id_184_Medical_tr_1875_1st_5607.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 553,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9512917560236615,
+      "VUS-ROC": 0.9991833264291828,
+      "Affiliation-F": 0.994545454545454,
+      "Event-based-F1": 0.7999999999999995,
+      "R-based-F1": 0.8,
+      "Standard-F1": 0.7999952000287999,
+      "PA-F1": 0.8275862068965517,
+      "AUC-ROC": 0.9916050523721504,
+      "AUC-PR": 0.5678104575163399
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "059_WSD_id_31_WebService_tr_4559_1st_9058.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 14,
+    "n_test_windows": 970,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.040490306999641325,
+      "VUS-ROC": 0.6957906548145255,
+      "Affiliation-F": 0.8100837052692446,
+      "Event-based-F1": 0.0424528301886792,
+      "R-based-F1": 0.10526315789473684,
+      "Standard-F1": 0.04255277501539346,
+      "PA-F1": 0.043478260869565216,
+      "AUC-ROC": 0.5950976991559718,
+      "AUC-PR": 0.018472369506303758
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "365_UCR_id_63_Facility_tr_50000_1st_210720.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 250,
+    "n_test_windows": 1000,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.03884357965254611,
+      "VUS-ROC": 0.9062082265316087,
+      "Affiliation-F": 0.7209944521497914,
+      "Event-based-F1": 0.01503759398496239,
+      "R-based-F1": 0.014909478168264111,
+      "Standard-F1": 0.015037153045888128,
+      "PA-F1": 0.043795620437956206,
+      "AUC-ROC": 0.5750585088599129,
+      "AUC-PR": 0.005441137184589504
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "488_UCR_id_186_Medical_tr_7500_1st_16000.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 23,
+    "n_test_windows": 974,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.18514211841069525,
+      "VUS-ROC": 0.9666463508729021,
+      "Affiliation-F": 0.783893455415669,
+      "Event-based-F1": 0.2352941176470586,
+      "R-based-F1": 0.19999999999999998,
+      "Standard-F1": 0.23529204154080993,
+      "PA-F1": 0.25806451612903225,
+      "AUC-ROC": 0.9505693581780539,
+      "AUC-PR": 0.10353562477622627
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "344_UCR_id_42_Sensor_tr_2851_1st_5365.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 846,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.36296550270603106,
+      "VUS-ROC": 0.951156154661869,
+      "Affiliation-F": 0.933558691921516,
+      "Event-based-F1": 0.1188118811881187,
+      "R-based-F1": 0.115,
+      "Standard-F1": 0.11320568710781405,
+      "PA-F1": 0.3283582089552239,
+      "AUC-ROC": 0.7344039194338596,
+      "AUC-PR": 0.040645950273218684
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "452_UCR_id_150_Facility_tr_10000_1st_35774.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 30,
+    "n_test_windows": 997,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9210002585905396,
+      "VUS-ROC": 0.9995609014371073,
+      "Affiliation-F": 0.9999283513649059,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.9393939393939393,
+      "Standard-F1": 0.9333283555821035,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9998556998556999,
+      "AUC-PR": 0.9821428571428572
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "564_YAHOO_id_14_Synthetic_tr_500_1st_658.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.43980582670438223,
+      "VUS-ROC": 0.6334445483616062,
+      "Affiliation-F": 0.7688142684643244,
+      "Event-based-F1": 0.4255319148936167,
+      "R-based-F1": 0.5701078582434514,
+      "Standard-F1": 0.42552856498789265,
+      "PA-F1": 0.449438202247191,
+      "AUC-ROC": 0.2595238095238095,
+      "AUC-PR": 0.17610974240350782
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "051_WSD_id_23_WebService_tr_3919_1st_5154.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 12,
+    "n_test_windows": 972,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.15365737929158998,
+      "VUS-ROC": 0.7925387695141751,
+      "Affiliation-F": 0.6980888820919109,
+      "Event-based-F1": 0.15789473684210512,
+      "R-based-F1": 0.21851808413183813,
+      "Standard-F1": 0.15297258306387654,
+      "PA-F1": 0.2087912087912088,
+      "AUC-ROC": 0.6774343514031331,
+      "AUC-PR": 0.06266655554295622
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "742_YAHOO_id_192_Synthetic_tr_500_1st_658.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.4405607249501182,
+      "VUS-ROC": 0.6298164061826137,
+      "Affiliation-F": 0.7052208094333554,
+      "Event-based-F1": 0.3762376237623759,
+      "R-based-F1": 0.5178523847588595,
+      "Standard-F1": 0.38834638516990594,
+      "PA-F1": 0.43478260869565216,
+      "AUC-ROC": 0.19999999999999998,
+      "AUC-PR": 0.1599654719816585
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "422_UCR_id_120_Facility_tr_50000_1st_150720.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 250,
+    "n_test_windows": 999,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.029788865356204414,
+      "VUS-ROC": 0.8796972675788094,
+      "Affiliation-F": 0.6665473177356622,
+      "Event-based-F1": 0.010489510489510478,
+      "R-based-F1": 0.024390243902439022,
+      "Standard-F1": 0.010600601269637548,
+      "PA-F1": 0.016483516483516484,
+      "AUC-ROC": 0.5251004016064257,
+      "AUC-PR": 0.004030048953493787
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "027_NAB_id_27_Facility_tr_757_1st_2582.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 218,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.8693280467491524,
+      "VUS-ROC": 0.9480794491851178,
+      "Affiliation-F": 0.997547516860821,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.8805970149253731,
+      "Standard-F1": 0.8461489645252045,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.8487588652482269,
+      "AUC-PR": 0.7866229974940859
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "500_UCR_id_198_Facility_tr_7482_1st_23357.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 23,
+    "n_test_windows": 972,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.10606231154783066,
+      "VUS-ROC": 0.5731153123384789,
+      "Affiliation-F": 0.7690372645410879,
+      "Event-based-F1": 0.03838383838383834,
+      "R-based-F1": 0.11066907775768536,
+      "Standard-F1": 0.04032218555277865,
+      "PA-F1": 0.0706713780918728,
+      "AUC-ROC": 0.06896008403361344,
+      "AUC-PR": 0.011341677482598254
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "336_UCR_id_34_Facility_tr_32191_1st_124159.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 97,
+    "n_test_windows": 995,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.02758049412839095,
+      "VUS-ROC": 0.7495679100499762,
+      "Affiliation-F": 0.6664855443125609,
+      "Event-based-F1": 0.020689655172413775,
+      "R-based-F1": 0.047692784143697736,
+      "Standard-F1": 0.02105232078021164,
+      "PA-F1": 0.07003891050583658,
+      "AUC-ROC": 0.4322740590489069,
+      "AUC-PR": 0.008317317734613838
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "811_Exathlon_id_2_Facility_tr_10766_1st_12590.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 33,
+    "n_test_windows": 976,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9923417955317403,
+      "VUS-ROC": 0.9974161488849496,
+      "Affiliation-F": 0.9999363554534928,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.990877993158495,
+      "Standard-F1": 0.9881606811989205,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9955177799571393,
+      "AUC-PR": 0.9888634060139585
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "483_UCR_id_181_Medical_tr_2499_1st_6508.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 740,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.291571458768041,
+      "VUS-ROC": 0.843801385797562,
+      "Affiliation-F": 0.8886782573877682,
+      "Event-based-F1": 0.043478260869565175,
+      "R-based-F1": 0.04015748031496062,
+      "Standard-F1": 0.04143605831263337,
+      "PA-F1": 0.14563106796116504,
+      "AUC-ROC": 0.3611954022988506,
+      "AUC-PR": 0.02077532985784311
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "524_UCR_id_222_Medical_tr_1875_1st_5865.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 553,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.08196172968400284,
+      "VUS-ROC": 0.5584664704504675,
+      "Affiliation-F": 0.7061890336761268,
+      "Event-based-F1": 0.06909788867562372,
+      "R-based-F1": 0.1875,
+      "Standard-F1": 0.06980735421523768,
+      "PA-F1": 0.091324200913242,
+      "AUC-ROC": 0.19732645403377114,
+      "AUC-PR": 0.028602859003268626
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "548_SMAP_id_18_Sensor_tr_2094_1st_5600.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 619,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.036184783056237124,
+      "VUS-ROC": 0.5427264979497909,
+      "Affiliation-F": 0.6668002624285438,
+      "Event-based-F1": 0.07547169811320746,
+      "R-based-F1": 0.04895104895104896,
+      "Standard-F1": 0.07650199648353108,
+      "PA-F1": 0.08211143695014662,
+      "AUC-ROC": 0.4693034238488784,
+      "AUC-PR": 0.022381722740062525
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "424_UCR_id_122_Medical_tr_7464_1st_12190.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 23,
+    "n_test_windows": 970,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.18498319858783893,
+      "VUS-ROC": 0.5986891274524389,
+      "Affiliation-F": 0.9520548786273639,
+      "Event-based-F1": 0.026476578411405265,
+      "R-based-F1": 0.37943528583948166,
+      "Standard-F1": 0.028455004051281204,
+      "PA-F1": 0.028484231943031537,
+      "AUC-ROC": 0.0003735803945008926,
+      "AUC-PR": 0.008873164571264993
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "357_UCR_id_55_Facility_tr_12500_1st_46600.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 38,
+    "n_test_windows": 985,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.05162316754012774,
+      "VUS-ROC": 0.8571664661331644,
+      "Affiliation-F": 0.6674376486504174,
+      "Event-based-F1": 0.05498281786941575,
+      "R-based-F1": 0.12582781456953643,
+      "Standard-F1": 0.05737618820157868,
+      "PA-F1": 0.22916666666666666,
+      "AUC-ROC": 0.7640470412544335,
+      "AUC-PR": 0.026912243600456548
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "838_Exathlon_id_29_Facility_tr_10766_1st_12590.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 33,
+    "n_test_windows": 976,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.6816214623448977,
+      "VUS-ROC": 0.8702173847930567,
+      "Affiliation-F": 0.9870393542776646,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.4312184353991773,
+      "Standard-F1": 0.5759956771524429,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.8276415676873341,
+      "AUC-PR": 0.6228483404769037
+    }
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "090_SVDB_id_7_Medical_tr_12157_1st_12257.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 38,
+    "n_test_windows": 994,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "116_TAO_id_1_Environment_tr_500_1st_3.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 3,
+    "stride": 10,
+    "n_test_windows": 941,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "114_SVDB_id_31_Medical_tr_25000_1st_63090.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 75,
+    "n_test_windows": 999,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "093_SVDB_id_10_Medical_tr_500_1st_37.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 230,
+    "n_test_windows": 1000,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "107_SVDB_id_24_Medical_tr_32805_1st_32905.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 198,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "098_SVDB_id_15_Medical_tr_500_1st_303.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 230,
+    "n_test_windows": 1000,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "095_SVDB_id_12_Medical_tr_6264_1st_6364.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 225,
+    "n_test_windows": 996,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "092_SVDB_id_9_Medical_tr_2674_1st_2774.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 228,
+    "n_test_windows": 999,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "094_SVDB_id_11_Medical_tr_20100_1st_23611.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 61,
+    "n_test_windows": 987,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "085_SVDB_id_2_Medical_tr_50000_1st_54982.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 181,
+    "n_test_windows": 997,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "034_GHL_id_3_Sensor_tr_50000_1st_122001.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "046_GHL_id_15_Sensor_tr_50000_1st_156462.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "196_Exathlon_id_23_Facility_tr_11665_1st_13484.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 18,
+    "stride": 35,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "053_GHL_id_22_Sensor_tr_50000_1st_126448.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "198_Exathlon_id_25_Facility_tr_12538_1st_12638.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 117,
+    "n_test_windows": 997,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "177_Exathlon_id_4_Facility_tr_11665_1st_13484.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 18,
+    "stride": 35,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "143_CATSv2_id_6_Sensor_tr_50000_1st_60232.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 17,
+    "stride": 150,
+    "n_test_windows": 1000,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "047_GHL_id_16_Sensor_tr_50000_1st_77001.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "184_Exathlon_id_11_Facility_tr_11665_1st_13484.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 18,
+    "stride": 35,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "056_GHL_id_25_Sensor_tr_50000_1st_105568.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "688_YAHOO_id_138_WebService_tr_500_1st_482.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.8925566738123042,
+      "VUS-ROC": 0.981037660997554,
+      "Affiliation-F": 0.9408295312920346,
+      "Event-based-F1": 0.7619047619047614,
+      "R-based-F1": 0.7103594080338267,
+      "Standard-F1": 0.6956472590139309,
+      "PA-F1": 0.8163265306122449,
+      "AUC-ROC": 0.8834269662921349,
+      "AUC-PR": 0.541609845151035
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "790_YAHOO_id_240_WebService_tr_500_1st_119.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9958731699953093,
+      "VUS-ROC": 0.9980027902587532,
+      "Affiliation-F": 0.9819045504789832,
+      "Event-based-F1": 0.9411764705882347,
+      "R-based-F1": 0.9477234401349073,
+      "Standard-F1": 0.9411714879156522,
+      "PA-F1": 0.9411764705882353,
+      "AUC-ROC": 0.9614130434782608,
+      "AUC-PR": 0.9145314754689755
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "701_YAHOO_id_151_Synthetic_tr_500_1st_893.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.37007292420502347,
+      "VUS-ROC": 0.7089074007572801,
+      "Affiliation-F": 0.6849997170825548,
+      "Event-based-F1": 0.3076923076923074,
+      "R-based-F1": 0.4207317073170732,
+      "Standard-F1": 0.3124973633034971,
+      "PA-F1": 0.31746031746031744,
+      "AUC-ROC": 0.4280821917808219,
+      "AUC-PR": 0.17734204793028324
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "092_WSD_id_64_WebService_tr_500_1st_118.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 18,
+    "n_test_windows": 981,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.7900774506837358,
+      "VUS-ROC": 0.9667418714136071,
+      "Affiliation-F": 0.793222698565814,
+      "Event-based-F1": 0.6582278481012653,
+      "R-based-F1": 0.5383320237961612,
+      "Standard-F1": 0.6046462304350433,
+      "PA-F1": 0.7346938775510204,
+      "AUC-ROC": 0.947579240682689,
+      "AUC-PR": 0.5000542947907992
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "803_YAHOO_id_253_WebService_tr_500_1st_58.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9194925719921258,
+      "VUS-ROC": 0.8265788297340606,
+      "Affiliation-F": 0.8672411687868533,
+      "Event-based-F1": 0.8089887640449434,
+      "R-based-F1": 0.7325217685349565,
+      "Standard-F1": 0.8152125620560181,
+      "PA-F1": 0.8379888268156425,
+      "AUC-ROC": 0.24470588235294122,
+      "AUC-PR": 0.6284591546304331
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "791_YAHOO_id_241_WebService_tr_500_1st_593.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.3998562889094542,
+      "VUS-ROC": 0.6927953769223215,
+      "Affiliation-F": 0.705259943719908,
+      "Event-based-F1": 0.36538461538461503,
+      "R-based-F1": 0.5035618878005343,
+      "Standard-F1": 0.36190167803081374,
+      "PA-F1": 0.37735849056603776,
+      "AUC-ROC": 0.4398876404494382,
+      "AUC-PR": 0.18311089533741057
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "727_YAHOO_id_177_WebService_tr_500_1st_82.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9782630115835522,
+      "VUS-ROC": 0.939686558679152,
+      "Affiliation-F": 0.8973429392237697,
+      "Event-based-F1": 0.8808290155440409,
+      "R-based-F1": 0.7553379574044358,
+      "Standard-F1": 0.8820463516383421,
+      "PA-F1": 0.8911917098445595,
+      "AUC-ROC": 0.21233569261880691,
+      "AUC-PR": 0.6992257292011224
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "691_YAHOO_id_141_WebService_tr_500_1st_57.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.997967658456496,
+      "VUS-ROC": 0.992944026163631,
+      "Affiliation-F": 0.9463046736044107,
+      "Event-based-F1": 0.9718309859154924,
+      "R-based-F1": 0.7733160286023524,
+      "Standard-F1": 0.931211954899077,
+      "PA-F1": 0.9777777777777777,
+      "AUC-ROC": 0.8387445887445887,
+      "AUC-PR": 0.9544236618558203
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "552_YAHOO_id_2_Synthetic_tr_500_1st_893.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.34353651551277853,
+      "VUS-ROC": 0.708254557962067,
+      "Affiliation-F": 0.67782652716841,
+      "Event-based-F1": 0.3174603174603172,
+      "R-based-F1": 0.3174603174603175,
+      "Standard-F1": 0.31745764678487626,
+      "PA-F1": 0.31746031746031744,
+      "AUC-ROC": 0.410958904109589,
+      "AUC-PR": 0.11380045128381001
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "604_YAHOO_id_54_WebService_tr_500_1st_116.csv",
+    "stratum": "U_locality_t1",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 109,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.7990995427721193,
+      "VUS-ROC": 0.8689199261559989,
+      "Affiliation-F": 0.7832423720232791,
+      "Event-based-F1": 0.6423357664233572,
+      "R-based-F1": 0.5152091254752851,
+      "Standard-F1": 0.6470544463963921,
+      "PA-F1": 0.6821705426356589,
+      "AUC-ROC": 0.5379370629370629,
+      "AUC-PR": 0.40003763542645193
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "520_UCR_id_218_Medical_tr_9567_1st_16000.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 29,
+    "n_test_windows": 987,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.05609060309259355,
+      "VUS-ROC": 0.7676213290621234,
+      "Affiliation-F": 0.6657218899173099,
+      "Event-based-F1": 0.01010101010101009,
+      "R-based-F1": 0.01587113706597636,
+      "Standard-F1": 0.01408436719043846,
+      "PA-F1": 0.023529411764705882,
+      "AUC-ROC": 0.1020408163265306,
+      "AUC-PR": 0.00488273783988454
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "663_YAHOO_id_113_Synthetic_tr_500_1st_658.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9484390266243408,
+      "VUS-ROC": 0.9807344021668584,
+      "Affiliation-F": 0.8573087718166268,
+      "Event-based-F1": 0.6349206349206344,
+      "R-based-F1": 0.6351550960118169,
+      "Standard-F1": 0.6349163013649272,
+      "PA-F1": 0.6896551724137931,
+      "AUC-ROC": 0.803968253968254,
+      "AUC-PR": 0.4417336152219873
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "573_YAHOO_id_23_Synthetic_tr_500_1st_623.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.6490846087922032,
+      "VUS-ROC": 0.8329044611034835,
+      "Affiliation-F": 0.8174054299399189,
+      "Event-based-F1": 0.6486486486486481,
+      "R-based-F1": 0.6777777777777777,
+      "Standard-F1": 0.6486442659171221,
+      "PA-F1": 0.6486486486486487,
+      "AUC-ROC": 0.7457627118644068,
+      "AUC-PR": 0.5232646017377961
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "110_WSD_id_82_WebService_tr_500_1st_375.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 18,
+    "n_test_windows": 980,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.5195565890666104,
+      "VUS-ROC": 0.893305834004488,
+      "Affiliation-F": 0.7788995969049328,
+      "Event-based-F1": 0.4705882352941172,
+      "R-based-F1": 0.47058823529411764,
+      "Standard-F1": 0.6399952000359996,
+      "PA-F1": 0.64,
+      "AUC-ROC": 0.9176511226252159,
+      "AUC-PR": 0.4201842765788838
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "134_WSD_id_106_WebService_tr_4559_1st_7990.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 14,
+    "n_test_windows": 970,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.43390151416504513,
+      "VUS-ROC": 0.9384988399905438,
+      "Affiliation-F": 0.8049136747345106,
+      "Event-based-F1": 0.6666666666666662,
+      "R-based-F1": 0.46582278481012657,
+      "Standard-F1": 0.5714239796287351,
+      "PA-F1": 0.875,
+      "AUC-ROC": 0.9418326067318645,
+      "AUC-PR": 0.5131906429384303
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "107_WSD_id_79_WebService_tr_1095_1st_1195.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 18,
+    "n_test_windows": 947,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.2510163761221694,
+      "VUS-ROC": 0.8020811442238136,
+      "Affiliation-F": 0.7393004606421453,
+      "Event-based-F1": 0.16949152542372842,
+      "R-based-F1": 0.4342483715421707,
+      "Standard-F1": 0.11918836950126495,
+      "PA-F1": 0.4482758620689655,
+      "AUC-ROC": 0.5285364145658262,
+      "AUC-PR": 0.06405404295252005
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "271_IOPS_id_12_WebService_tr_500_1st_341.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 819,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.47562807823300096,
+      "VUS-ROC": 0.7603350511464724,
+      "Affiliation-F": 0.6983608789274561,
+      "Event-based-F1": 0.26915887850467257,
+      "R-based-F1": 0.33952550435012063,
+      "Standard-F1": 0.2737613476722356,
+      "PA-F1": 0.2920892494929006,
+      "AUC-ROC": 0.5626869871737906,
+      "AUC-PR": 0.12309220845931654
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "386_UCR_id_84_Environment_tr_2046_1st_5703.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 604,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.08546978147534376,
+      "VUS-ROC": 0.7598485854555856,
+      "Affiliation-F": 0.7299206065390089,
+      "Event-based-F1": 0.09852216748768462,
+      "R-based-F1": 0.16473988439306356,
+      "Standard-F1": 0.09708619616861075,
+      "PA-F1": 0.12440191387559808,
+      "AUC-ROC": 0.6595080046856696,
+      "AUC-PR": 0.05007584433445092
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "566_YAHOO_id_16_Synthetic_tr_500_1st_623.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 83,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.48215363470415734,
+      "VUS-ROC": 0.6107209916176003,
+      "Affiliation-F": 0.7458089468060263,
+      "Event-based-F1": 0.4752475247524748,
+      "R-based-F1": 0.5570051049347703,
+      "Standard-F1": 0.4752439016058986,
+      "PA-F1": 0.4752475247524752,
+      "AUC-ROC": 0.24717514124293782,
+      "AUC-PR": 0.22902522684894705
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "297_TODS_id_11_Synthetic_tr_500_1st_7.csv",
+    "stratum": "U_locality_t2",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 441,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9677162481111458,
+      "VUS-ROC": 0.9736155393296441,
+      "Affiliation-F": 0.87255559340381,
+      "Event-based-F1": 0.7652582159624408,
+      "R-based-F1": 0.6980959994860685,
+      "Standard-F1": 0.7323896825111577,
+      "PA-F1": 0.788135593220339,
+      "AUC-ROC": 0.8031414716424204,
+      "AUC-PR": 0.7314013067549091
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "280_NEK_id_4_WebService_tr_500_1st_231.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 48,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 1.0,
+      "VUS-ROC": 1.0,
+      "Affiliation-F": 0.9999999999999996,
+      "Event-based-F1": 0.6666666666666662,
+      "R-based-F1": 1.0,
+      "Standard-F1": 0.9999950000249999,
+      "PA-F1": 1.0,
+      "AUC-ROC": 1.0,
+      "AUC-PR": 1.0
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "810_Exathlon_id_1_Facility_tr_10766_1st_12590.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 33,
+    "n_test_windows": 976,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9802815757140433,
+      "VUS-ROC": 0.9966988470217778,
+      "Affiliation-F": 0.9968159317375369,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.8504322296525854,
+      "Standard-F1": 0.979467140830986,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.983669318223094,
+      "AUC-PR": 0.9620003396441026
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "839_Exathlon_id_30_Facility_tr_10766_1st_12590.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 33,
+    "n_test_windows": 976,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9918212587321028,
+      "VUS-ROC": 0.9972670473866738,
+      "Affiliation-F": 0.9998233339481999,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.986254295532646,
+      "Standard-F1": 0.9821378587626831,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9939413751770731,
+      "AUC-PR": 0.9868428618898273
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "211_SMD_id_34_Facility_tr_5925_1st_17580.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 18,
+    "n_test_windows": 983,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.8538822902667291,
+      "VUS-ROC": 0.9694559228650129,
+      "Affiliation-F": 0.999932175800325,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.9436619718309859,
+      "Standard-F1": 0.9285664541082815,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9698347107438017,
+      "AUC-PR": 0.8750363060882518
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "169_Daphnet_id_1_HumanActivity_tr_9693_1st_20732.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 30,
+    "n_test_windows": 967,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.7814362139753438,
+      "VUS-ROC": 0.9702196083756272,
+      "Affiliation-F": 0.9260749973449061,
+      "Event-based-F1": 0.7499999999999994,
+      "R-based-F1": 0.5354441560795283,
+      "Standard-F1": 0.5844699735614379,
+      "PA-F1": 0.8125,
+      "AUC-ROC": 0.8913266537904394,
+      "AUC-PR": 0.5975875019406669
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "284_NEK_id_8_WebService_tr_500_1st_976.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 48,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 1.0,
+      "VUS-ROC": 1.0,
+      "Affiliation-F": 0.9999999999999996,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 1.0,
+      "Standard-F1": 0.9999950000249999,
+      "PA-F1": 1.0,
+      "AUC-ROC": 1.0,
+      "AUC-PR": 1.0
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "816_Exathlon_id_7_Facility_tr_10766_1st_12590.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 33,
+    "n_test_windows": 976,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9918212587321028,
+      "VUS-ROC": 0.9972670473866738,
+      "Affiliation-F": 0.9998233339481999,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.986254295532646,
+      "Standard-F1": 0.9821378587626831,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9939413751770731,
+      "AUC-PR": 0.9868428618898273
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "531_SMAP_id_1_Sensor_tr_1811_1st_4510.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 534,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9986237640773483,
+      "VUS-ROC": 0.9999725488457024,
+      "Affiliation-F": 0.9956249744449436,
+      "Event-based-F1": 0.8780487804878044,
+      "R-based-F1": 0.878048780487805,
+      "Standard-F1": 0.9444394444709149,
+      "PA-F1": 0.8780487804878049,
+      "AUC-ROC": 0.9993540051679587,
+      "AUC-PR": 0.968294051627385
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "821_Exathlon_id_12_Facility_tr_6985_1st_7085.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 40,
+    "n_test_windows": 990,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.9894417265520699,
+      "VUS-ROC": 0.9970917553319479,
+      "Affiliation-F": 0.9997664124937116,
+      "Event-based-F1": 0.9999999999999996,
+      "R-based-F1": 0.9754816112084064,
+      "Standard-F1": 0.9689872528951692,
+      "PA-F1": 1.0,
+      "AUC-ROC": 0.9804441091059035,
+      "AUC-PR": 0.9677397321090055
+    }
+  },
+  {
+    "subset": "TSB-AD-U",
+    "series": "364_UCR_id_62_Sensor_tr_2833_1st_5988.csv",
+    "stratum": "U_locality_t3",
+    "n_channels": 1,
+    "stride": 10,
+    "n_test_windows": 841,
+    "hyperparameters": {
+      "periodicity": 1,
+      "n_components": null
+    },
+    "mode": "unsupervised (whole series)",
+    "status": "ok",
+    "Sub_PCA": {
+      "VUS-PR": 0.6865337002896545,
+      "VUS-ROC": 0.9695368334601839,
+      "Affiliation-F": 0.9607606558668504,
+      "Event-based-F1": 0.3921568627450977,
+      "R-based-F1": 0.35294117647058826,
+      "Standard-F1": 0.487799881074389,
+      "PA-F1": 0.5633802816901409,
+      "AUC-ROC": 0.8557247259439709,
+      "AUC-PR": 0.2806907380011277
+    }
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "022_MITDB_id_4_Medical_tr_50000_1st_54253.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 250,
+    "n_test_windows": 1000,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "124_TAO_id_9_Environment_tr_500_1st_1.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 3,
+    "stride": 10,
+    "n_test_windows": 941,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "027_MITDB_id_9_Medical_tr_25000_1st_52255.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 75,
+    "n_test_windows": 999,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "111_SVDB_id_28_Medical_tr_1791_1st_1891.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 229,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "102_SVDB_id_19_Medical_tr_50000_1st_107354.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 181,
+    "n_test_windows": 997,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "100_SVDB_id_17_Medical_tr_17803_1st_17903.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 113,
+    "n_test_windows": 996,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "105_SVDB_id_22_Medical_tr_500_1st_417.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 150,
+    "n_test_windows": 997,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "082_LTDB_id_4_Medical_tr_4456_1st_4556.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 96,
+    "n_test_windows": 995,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "101_SVDB_id_18_Medical_tr_1851_1st_1951.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 229,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "023_MITDB_id_5_Medical_tr_25000_1st_36913.csv",
+    "stratum": "M_D2-5",
+    "n_channels": 2,
+    "stride": 75,
+    "n_test_windows": 999,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "037_GHL_id_6_Sensor_tr_50000_1st_80001.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "001_Genesis_id_1_Sensor_tr_4055_1st_15538.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 18,
+    "stride": 13,
+    "n_test_windows": 929,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "043_GHL_id_12_Sensor_tr_39938_1st_40038.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 161,
+    "n_test_windows": 994,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "189_Exathlon_id_16_Facility_tr_11663_1st_13482.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 12,
+    "stride": 35,
+    "n_test_windows": 997,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "048_GHL_id_17_Sensor_tr_50000_1st_154001.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "054_GHL_id_23_Sensor_tr_50000_1st_135001.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "045_GHL_id_14_Sensor_tr_50000_1st_85076.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "192_Exathlon_id_19_Facility_tr_11665_1st_13484.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 18,
+    "stride": 35,
+    "n_test_windows": 998,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "181_Exathlon_id_8_Facility_tr_11663_1st_13482.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 12,
+    "stride": 35,
+    "n_test_windows": 997,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  },
+  {
+    "subset": "TSB-AD-M",
+    "series": "035_GHL_id_4_Sensor_tr_50000_1st_90001.csv",
+    "stratum": "M_D11-20",
+    "n_channels": 19,
+    "stride": 151,
+    "n_test_windows": 993,
+    "status": "not_applicable",
+    "Sub_PCA": null
+  }
+]

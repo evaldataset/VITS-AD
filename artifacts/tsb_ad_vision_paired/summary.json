@@ -1,0 +1,125 @@
+{
+  "overall": {
+    "vision_vs_raw_flatten": {
+      "n": 100,
+      "vision_mean": 0.6508768905486788,
+      "baseline_mean": 0.6739384453629281,
+      "delta_mean": -0.023061554814249156,
+      "vision_wins": 33,
+      "wilcoxon_p": 0.039198862809347555
+    },
+    "vision_vs_raw_meanpool": {
+      "n": 120,
+      "vision_mean": 0.6320018088106194,
+      "baseline_mean": 0.5318933222006944,
+      "delta_mean": 0.10010848660992501,
+      "vision_wins": 73,
+      "wilcoxon_p": 0.0012193039631436513
+    }
+  },
+  "per_stratum": {
+    "M_D11-20": {
+      "vision_vs_raw_flatten": {
+        "n": 20,
+        "vision_mean": 0.34208542770736605,
+        "baseline_mean": 0.43120572879150976,
+        "delta_mean": -0.08912030108414375,
+        "vision_wins": 3,
+        "wilcoxon_p": 0.005068668908398948
+      },
+      "vision_vs_raw_meanpool": {
+        "n": 20,
+        "vision_mean": 0.34208542770736605,
+        "baseline_mean": 0.43430007322652014,
+        "delta_mean": -0.09221464551915401,
+        "vision_wins": 8,
+        "wilcoxon_p": 0.04764399211310098
+      }
+    },
+    "M_D2-5": {
+      "vision_vs_raw_flatten": {
+        "n": 20,
+        "vision_mean": 0.7195442467810491,
+        "baseline_mean": 0.7405444104823078,
+        "delta_mean": -0.02100016370125875,
+        "vision_wins": 5,
+        "wilcoxon_p": 0.058258056640625
+      },
+      "vision_vs_raw_meanpool": {
+        "n": 20,
+        "vision_mean": 0.7195442467810491,
+        "baseline_mean": 0.693844249918915,
+        "delta_mean": 0.02569999686213406,
+        "vision_wins": 11,
+        "wilcoxon_p": 0.17685317993164062
+      }
+    },
+    "M_D21-1000": {
+      "vision_vs_raw_flatten": {
+        "n": 0
+      },
+      "vision_vs_raw_meanpool": {
+        "n": 20,
+        "vision_mean": 0.5376264001203213,
+        "baseline_mean": 0.6126870177016541,
+        "delta_mean": -0.07506061758133273,
+        "vision_wins": 5,
+        "wilcoxon_p": 0.018633749462933773
+      }
+    },
+    "U_locality_t1": {
+      "vision_vs_raw_flatten": {
+        "n": 20,
+        "vision_mean": 0.9418500779392831,
+        "baseline_mean": 0.9088933878551584,
+        "delta_mean": 0.03295669008412471,
+        "vision_wins": 7,
+        "wilcoxon_p": 0.9176315934670087
+      },
+      "vision_vs_raw_meanpool": {
+        "n": 20,
+        "vision_mean": 0.9418500779392831,
+        "baseline_mean": 0.6612679940813443,
+        "delta_mean": 0.28058208385793865,
+        "vision_wins": 18,
+        "wilcoxon_p": 0.0001678466796875
+      }
+    },
+    "U_locality_t2": {
+      "vision_vs_raw_flatten": {
+        "n": 20,
+        "vision_mean": 0.6293710917719026,
+        "baseline_mean": 0.6711447446023806,
+        "delta_mean": -0.04177365283047798,
+        "vision_wins": 10,
+        "wilcoxon_p": 0.9587607499379828
+      },
+      "vision_vs_raw_meanpool": {
+        "n": 20,
+        "vision_mean": 0.6293710917719026,
+        "baseline_mean": 0.2718293733617626,
+        "delta_mean": 0.35754171841014004,
+        "vision_wins": 18,
+        "wilcoxon_p": 4.76837158203125e-05
+      }
+    },
+    "U_locality_t3": {
+      "vision_vs_raw_flatten": {
+        "n": 20,
+        "vision_mean": 0.6215336085437941,
+        "baseline_mean": 0.617903955083284,
+        "delta_mean": 0.003629653460509981,
+        "vision_wins": 8,
+        "wilcoxon_p": 0.7474753882655978
+      },
+      "vision_vs_raw_meanpool": {
+        "n": 20,
+        "vision_mean": 0.6215336085437941,
+        "baseline_mean": 0.5174312249139699,
+        "delta_mean": 0.10410238362982413,
+        "vision_wins": 13,
+        "wilcoxon_p": 0.20429082561000145
+      }
+    }
+  }
+}

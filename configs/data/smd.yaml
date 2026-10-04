@@ -1,0 +1,17 @@
+# SMD (Server Machine Dataset) configuration
+name: smd
+raw_dir: data/raw/smd
+processed_dir: data/processed/smd
+num_features: 38
+# Train/test split now uses the official SMD train/ and test/ files; the
+# loader returns the boundary index automatically. `train_ratio` is kept
+# only as a fallback for ad-hoc time-based experiments.
+train_ratio: 0.5
+# Entity selection (SMD has 28 machines: machine-1-1 to machine-3-11)
+entity: machine-1-1  # Default entity, override via CLI
+# Sliding window
+window_size: 100
+stride: 10
+# Normalization
+normalize: true
+norm_method: standard  # standard | minmax

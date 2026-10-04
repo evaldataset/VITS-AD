@@ -1,0 +1,119 @@
+{
+  "n_series": 100,
+  "detectors": {
+    "USAD": {
+      "vs_raw_flatten": {
+        "VUS-PR": {
+          "n": 100,
+          "detector_mean": 0.5808846116841881,
+          "reference_mean": 0.6739384453629281,
+          "delta": -0.09305383367874008,
+          "detector_wins": 29,
+          "wilcoxon_p": 0.0003425198366232003
+        },
+        "AUC-ROC": {
+          "n": 100,
+          "detector_mean": 0.6468893029777709,
+          "reference_mean": 0.7642758716738038,
+          "delta": -0.1173865686960329,
+          "detector_wins": 23,
+          "wilcoxon_p": 7.55746944981963e-06
+        }
+      },
+      "vs_vision": {
+        "VUS-PR": {
+          "n": 100,
+          "detector_mean": 0.5808846116841881,
+          "reference_mean": 0.6508768905486789,
+          "delta": -0.06999227886449091,
+          "detector_wins": 42,
+          "wilcoxon_p": 0.08796184295545247
+        },
+        "AUC-ROC": {
+          "n": 100,
+          "detector_mean": 0.6468893029777709,
+          "reference_mean": 0.7762845326434814,
+          "delta": -0.12939522966571051,
+          "detector_wins": 28,
+          "wilcoxon_p": 5.814234892389117e-05
+        }
+      }
+    },
+    "TimesNet": {
+      "vs_raw_flatten": {
+        "VUS-PR": {
+          "n": 100,
+          "detector_mean": 0.6177780163766539,
+          "reference_mean": 0.6739384453629281,
+          "delta": -0.056160428986274366,
+          "detector_wins": 29,
+          "wilcoxon_p": 9.122692472649752e-05
+        },
+        "AUC-ROC": {
+          "n": 100,
+          "detector_mean": 0.621708512773865,
+          "reference_mean": 0.7642758716738038,
+          "delta": -0.14256735889993888,
+          "detector_wins": 23,
+          "wilcoxon_p": 3.2715597182889192e-09
+        }
+      },
+      "vs_vision": {
+        "VUS-PR": {
+          "n": 100,
+          "detector_mean": 0.6177780163766539,
+          "reference_mean": 0.6508768905486789,
+          "delta": -0.033098874172025214,
+          "detector_wins": 40,
+          "wilcoxon_p": 0.11062667611849883
+        },
+        "AUC-ROC": {
+          "n": 100,
+          "detector_mean": 0.621708512773865,
+          "reference_mean": 0.7762845326434814,
+          "delta": -0.1545760198696165,
+          "detector_wins": 26,
+          "wilcoxon_p": 6.235139563703788e-08
+        }
+      }
+    },
+    "AnomalyTransformer": {
+      "vs_raw_flatten": {
+        "VUS-PR": {
+          "n": 96,
+          "detector_mean": 0.5226110880836662,
+          "reference_mean": 0.6782612313984933,
+          "delta": -0.1556501433148271,
+          "detector_wins": 26,
+          "wilcoxon_p": 9.213215216228397e-07
+        },
+        "AUC-ROC": {
+          "n": 96,
+          "detector_mean": 0.5216668829552613,
+          "reference_mean": 0.7667314122018771,
+          "delta": -0.24506452924661581,
+          "detector_wins": 17,
+          "wilcoxon_p": 2.2404418034712786e-10
+        }
+      },
+      "vs_vision": {
+        "VUS-PR": {
+          "n": 96,
+          "detector_mean": 0.5226110880836662,
+          "reference_mean": 0.6456514822639234,
+          "delta": -0.12304039418025714,
+          "detector_wins": 30,
+          "wilcoxon_p": 3.468002736078753e-05
+        },
+        "AUC-ROC": {
+          "n": 96,
+          "detector_mean": 0.5216668829552613,
+          "reference_mean": 0.7703350342683598,
+          "delta": -0.24866815131309847,
+          "detector_wins": 19,
+          "wilcoxon_p": 4.894663440695447e-11
+        }
+      }
+    }
+  }
+}

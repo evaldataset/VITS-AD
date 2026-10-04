@@ -1,0 +1,1758 @@
+{
+  "summary": {
+    "n_series": 100,
+    "proxies": {
+      "tail_ratio": {
+        "spearman_with_z_ratio": 0.28248058666090564,
+        "p_z_ratio": 0.004406039779832808,
+        "spearman_with_delta": -0.25849644882154943,
+        "p_delta": 0.009410803172185884,
+        "loo_mean_auc": 0.7926620833644742,
+        "loo_vision_fraction": 0.74
+      },
+      "kurtosis": {
+        "spearman_with_z_ratio": NaN,
+        "p_z_ratio": NaN,
+        "spearman_with_delta": NaN,
+        "p_delta": NaN,
+        "loo_mean_auc": 0.7857806629535699,
+        "loo_vision_fraction": 0.69
+      },
+      "excursion": {
+        "spearman_with_z_ratio": 0.10767051932932464,
+        "p_z_ratio": 0.28630086050493553,
+        "spearman_with_delta": -0.12901406819987585,
+        "p_delta": 0.20080053869628267,
+        "loo_mean_auc": 0.7889560418751796,
+        "loo_vision_fraction": 0.53
+      },
+      "novelty_frac": {
+        "spearman_with_z_ratio": 0.031244193031106867,
+        "p_z_ratio": 0.7576341043591293,
+        "spearman_with_delta": 0.05538045885403915,
+        "p_delta": 0.5841986377689978,
+        "loo_mean_auc": 0.7671946074065812,
+        "loo_vision_fraction": 0.41
+      },
+      "z_disp": {
+        "spearman_with_z_ratio": 0.10948283104694008,
+        "p_z_ratio": 0.27821984622429574,
+        "spearman_with_delta": -0.11163847655009734,
+        "p_delta": 0.26880880512539945,
+        "loo_mean_auc": 0.7938259739392657,
+        "loo_vision_fraction": 0.89
+      }
+    },
+    "baselines": {
+      "always_raw": 0.7642758716738035,
+      "always_vision": 0.7762845326434815,
+      "oracle": 0.8458776199213355
+    },
+    "z_ratio_labelled": {
+      "spearman_with_delta": -0.4566406352852642,
+      "p": 1.7947600935527453e-06
+    }
+  },
+  "records": [
+    {
+      "subset": "TSB-AD-U",
+      "series": "693_YAHOO_id_143_WebService_tr_500_1st_1003.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 6.573185252328568,
+        "kurtosis": 3.7010319697711953,
+        "excursion": 2.5260281940203377,
+        "novelty_frac": 0.003236245954692557,
+        "z_disp": 1.3961427945240203,
+        "z_ratio_labelled": 5.44568712382783
+      },
+      "raw_auc": 0.9658730158730158,
+      "vision_auc": 0.9865079365079366,
+      "delta": 0.020634920634920784
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "688_YAHOO_id_138_WebService_tr_500_1st_482.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.522560798370366,
+        "kurtosis": -1.2308984491720643,
+        "excursion": 2.9701671196299313,
+        "novelty_frac": 0.7110169491525423,
+        "z_disp": 0.7053730109226879,
+        "z_ratio_labelled": 1.1465935275500883
+      },
+      "raw_auc": 0.9117977528089887,
+      "vision_auc": 0.9033707865168539,
+      "delta": -0.008426966292134797
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "161_Stock_id_13_Finance_tr_500_1st_3.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3.573047244522296,
+        "kurtosis": 5.908889496349172,
+        "excursion": 1.0032032960481747,
+        "novelty_frac": 0.0005263157894736842,
+        "z_disp": 1.3908180227601015,
+        "z_ratio_labelled": 5.876211189434527
+      },
+      "raw_auc": 0.7408199643493761,
+      "vision_auc": 0.5775401069518716,
+      "delta": -0.1632798573975045
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "790_YAHOO_id_240_WebService_tr_500_1st_119.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3.3580404771107997,
+        "kurtosis": -1.472580654884955,
+        "excursion": 0.8350206617570965,
+        "novelty_frac": 0.0,
+        "z_disp": 1.1234760032698095,
+        "z_ratio_labelled": 4.396796725045316
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 0.8931159420289856,
+      "delta": -0.10688405797101441
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "739_YAHOO_id_189_Synthetic_tr_500_1st_893.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 36.50647448227599,
+        "kurtosis": 3.721884177900847,
+        "excursion": 6.515210984467873,
+        "novelty_frac": 0.9413680781758957,
+        "z_disp": 0.7130107270338126,
+        "z_ratio_labelled": 3.9680299796632728
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "701_YAHOO_id_151_Synthetic_tr_500_1st_893.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.2379839707069324,
+        "kurtosis": 0.5932639303797242,
+        "excursion": 1.7799812600555662,
+        "novelty_frac": 0.12269272529858849,
+        "z_disp": 1.3091812240943463,
+        "z_ratio_labelled": 4.350395751726741
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "117_WSD_id_89_WebService_tr_3251_1st_3351.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 4.97997337073375,
+        "kurtosis": 34.5232553800376,
+        "excursion": 1.1846260911080297,
+        "novelty_frac": 7.619047619047618e-05,
+        "z_disp": 0.9708671270085392,
+        "z_ratio_labelled": 1.8836585032638555
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "092_WSD_id_64_WebService_tr_500_1st_118.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 81.92620655590018,
+        "kurtosis": 144.73203595015062,
+        "excursion": 2.4269535095649766,
+        "novelty_frac": 0.0005636343140570398,
+        "z_disp": 1.046596695731228,
+        "z_ratio_labelled": 4.290797148852272
+      },
+      "raw_auc": 0.9991727621037966,
+      "vision_auc": 0.9950365726227794,
+      "delta": -0.004136189481017127
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "651_YAHOO_id_101_WebService_tr_500_1st_103.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.8388584649925739,
+        "kurtosis": -1.1444516388393327,
+        "excursion": 0.8438423836643977,
+        "novelty_frac": 0.0,
+        "z_disp": 0.808940891810514,
+        "z_ratio_labelled": 1.961096638088942
+      },
+      "raw_auc": 0.7413793103448276,
+      "vision_auc": 0.7913793103448276,
+      "delta": 0.04999999999999993
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "803_YAHOO_id_253_WebService_tr_500_1st_58.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.5090014517987747,
+        "kurtosis": 0.21174953457444978,
+        "excursion": 1.5226098210946575,
+        "novelty_frac": 0.16864406779661018,
+        "z_disp": 0.5806684015341952,
+        "z_ratio_labelled": 0.9676507054847503
+      },
+      "raw_auc": 0.33568627450980393,
+      "vision_auc": 0.6674509803921569,
+      "delta": 0.33176470588235296
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "551_YAHOO_id_1_Synthetic_tr_500_1st_893.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.2839450696920642,
+        "kurtosis": -0.8408935201160022,
+        "excursion": 1.5095693506844743,
+        "novelty_frac": 0.22149837133550487,
+        "z_disp": 1.2458894242259062,
+        "z_ratio_labelled": 2.6115114098170378
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "791_YAHOO_id_241_WebService_tr_500_1st_593.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.4997289590498117,
+        "kurtosis": -0.16778080259152528,
+        "excursion": 1.8405770991717418,
+        "novelty_frac": 0.13559322033898305,
+        "z_disp": 1.1801409817779531,
+        "z_ratio_labelled": 1.668412966134211
+      },
+      "raw_auc": 0.9044943820224719,
+      "vision_auc": 0.9848314606741573,
+      "delta": 0.08033707865168538
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "569_YAHOO_id_19_WebService_tr_500_1st_30.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.9946896417702924,
+        "kurtosis": -1.4394601278719574,
+        "excursion": 1.0950371868229622,
+        "novelty_frac": 0.001694915254237288,
+        "z_disp": 1.2473802083277565,
+        "z_ratio_labelled": 4.429407465568631
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 0.836996336996337,
+      "delta": -0.16300366300366298
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "727_YAHOO_id_177_WebService_tr_500_1st_82.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.6659425526042706,
+        "kurtosis": 2.7768949244193983,
+        "excursion": 1.9290913416587654,
+        "novelty_frac": 0.23728813559322035,
+        "z_disp": 0.6835036076611034,
+        "z_ratio_labelled": 1.7075205276756007
+      },
+      "raw_auc": 0.8179979777553085,
+      "vision_auc": 0.8422649140546007,
+      "delta": 0.02426693629929222
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "098_WSD_id_70_WebService_tr_3575_1st_3675.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 28.746136235390907,
+        "kurtosis": 49.13096731530802,
+        "excursion": 2.1322405135303266,
+        "novelty_frac": 0.007025441647909419,
+        "z_disp": 0.7114948666104149,
+        "z_ratio_labelled": 1.142991668734075
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "691_YAHOO_id_141_WebService_tr_500_1st_57.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.8645533966181362,
+        "kurtosis": 1.1694078515603081,
+        "excursion": 1.0511759620687855,
+        "novelty_frac": 0.000847457627118644,
+        "z_disp": 1.191079767659978,
+        "z_ratio_labelled": 3.717697634638232
+      },
+      "raw_auc": 0.9886363636363638,
+      "vision_auc": 0.716991341991342,
+      "delta": -0.2716450216450218
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "713_YAHOO_id_163_WebService_tr_500_1st_66.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.8381489088366223,
+        "kurtosis": 0.23814821786444318,
+        "excursion": 3.7558875951172594,
+        "novelty_frac": 0.788135593220339,
+        "z_disp": 0.698997274639486,
+        "z_ratio_labelled": 1.3539346513704438
+      },
+      "raw_auc": 0.7256728778467908,
+      "vision_auc": 0.9982746721877157,
+      "delta": 0.2726017943409249
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "552_YAHOO_id_2_Synthetic_tr_500_1st_893.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.832122187013406,
+        "kurtosis": -0.8935664840900501,
+        "excursion": 3.3520058541119293,
+        "novelty_frac": 0.6840390879478827,
+        "z_disp": 0.6638244673474236,
+        "z_ratio_labelled": 3.938630677742767
+      },
+      "raw_auc": 0.9986301369863013,
+      "vision_auc": 1.0,
+      "delta": 0.00136986301369868
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "672_YAHOO_id_122_WebService_tr_500_1st_857.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.7876511687287584,
+        "kurtosis": -0.9102723200699252,
+        "excursion": 0.863566773530001,
+        "novelty_frac": 0.0,
+        "z_disp": 1.2262382123915865,
+        "z_ratio_labelled": 2.058515136154089
+      },
+      "raw_auc": 0.7737373737373738,
+      "vision_auc": 0.6474747474747475,
+      "delta": -0.1262626262626263
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "604_YAHOO_id_54_WebService_tr_500_1st_116.csv",
+      "stratum": "U_locality_t1",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.51717192464098,
+        "kurtosis": -1.1771018720201827,
+        "excursion": 2.611241536325732,
+        "novelty_frac": 0.6822033898305084,
+        "z_disp": 0.6955683629440755,
+        "z_ratio_labelled": 1.1881278290636985
+      },
+      "raw_auc": 0.6811188811188811,
+      "vision_auc": 0.9066433566433566,
+      "delta": 0.22552447552447552
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "486_UCR_id_184_Medical_tr_1875_1st_5607.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 12.48154602764426,
+        "kurtosis": 49.281306796919374,
+        "excursion": 1.0258975653683615,
+        "novelty_frac": 0.002132954141485958,
+        "z_disp": 1.0650184754702778,
+        "z_ratio_labelled": 1.9589140031685235
+      },
+      "raw_auc": 0.9964571780653112,
+      "vision_auc": 0.9996919285274183,
+      "delta": 0.0032347504621070833
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "520_UCR_id_218_Medical_tr_9567_1st_16000.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 8.994992398166078,
+        "kurtosis": 10.71367625624524,
+        "excursion": 1.0288570482854678,
+        "novelty_frac": 0.0001742038882307853,
+        "z_disp": 1.664586006646593,
+        "z_ratio_labelled": 0.8809975318105175
+      },
+      "raw_auc": 0.1205539358600583,
+      "vision_auc": 0.8728862973760932,
+      "delta": 0.7523323615160349
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "059_WSD_id_31_WebService_tr_4559_1st_9058.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 9.35374813010544,
+        "kurtosis": 72.71768566982404,
+        "excursion": 1.7795120802326552,
+        "novelty_frac": 0.009505008408276668,
+        "z_disp": 1.3653941773486526,
+        "z_ratio_labelled": 1.0124097318925276
+      },
+      "raw_auc": 0.9468146606544109,
+      "vision_auc": 0.9293559949127066,
+      "delta": -0.017458665741704293
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "663_YAHOO_id_113_Synthetic_tr_500_1st_658.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 18.13333676089111,
+        "kurtosis": -0.49403535551853217,
+        "excursion": 1.179052140973143,
+        "novelty_frac": 0.0054288816503800215,
+        "z_disp": 0.754280338723653,
+        "z_ratio_labelled": 1.6759532045474972
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "365_UCR_id_63_Facility_tr_50000_1st_210720.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 96.19315475703644,
+        "kurtosis": 7.005939725966883,
+        "excursion": 1.0501586859597747,
+        "novelty_frac": 0.0008041930063215171,
+        "z_disp": 1.601936629614212,
+        "z_ratio_labelled": 1.9625568864859337
+      },
+      "raw_auc": 0.5142092945503176,
+      "vision_auc": 0.8933467067870278,
+      "delta": 0.37913741223671016
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "573_YAHOO_id_23_Synthetic_tr_500_1st_623.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 49.668929967325006,
+        "kurtosis": 1.5810934804664099,
+        "excursion": 6.417103153410113,
+        "novelty_frac": 0.747014115092291,
+        "z_disp": 0.6787746777881144,
+        "z_ratio_labelled": 6.463128116492764
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "488_UCR_id_186_Medical_tr_7500_1st_16000.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 4.114542651222293,
+        "kurtosis": 16.653033900102894,
+        "excursion": 1.3324385185603476,
+        "novelty_frac": 0.00022222222222222223,
+        "z_disp": 1.4068334928202018,
+        "z_ratio_labelled": 0.8470709542415545
+      },
+      "raw_auc": 0.9292184265010351,
+      "vision_auc": 0.8420031055900621,
+      "delta": -0.08721532091097306
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "110_WSD_id_82_WebService_tr_500_1st_375.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 135.8817845194522,
+        "kurtosis": 179.4841909222557,
+        "excursion": 10.20218029870797,
+        "novelty_frac": 0.05221019395579612,
+        "z_disp": 1.1585012314400271,
+        "z_ratio_labelled": 2.0699698714773733
+      },
+      "raw_auc": 0.9990328151986183,
+      "vision_auc": 0.8540932642487047,
+      "delta": -0.14493955094991362
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "344_UCR_id_42_Sensor_tr_2851_1st_5365.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.7367119893207374,
+        "kurtosis": 2.3767755138508395,
+        "excursion": 1.055081695631867,
+        "novelty_frac": 0.0011689070718877848,
+        "z_disp": 0.8217670993590636,
+        "z_ratio_labelled": 0.8082684613451248
+      },
+      "raw_auc": 0.6274360370168753,
+      "vision_auc": 0.6701143168209036,
+      "delta": 0.042678279804028274
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "134_WSD_id_106_WebService_tr_4559_1st_7990.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 33.528042205670396,
+        "kurtosis": 71.2083586746278,
+        "excursion": 2.8807725881142985,
+        "novelty_frac": 0.00160853988447759,
+        "z_disp": 1.1860679632681403,
+        "z_ratio_labelled": 1.880205377007681
+      },
+      "raw_auc": 0.9600565570873101,
+      "vision_auc": 0.8890459919091945,
+      "delta": -0.07101056517811555
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "452_UCR_id_150_Facility_tr_10000_1st_35774.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 4.090666920910268,
+        "kurtosis": 15.228101063817196,
+        "excursion": 1.0057127481687844,
+        "novelty_frac": 6.666666666666667e-05,
+        "z_disp": 1.116956516879824,
+        "z_ratio_labelled": 1.5358152066247397
+      },
+      "raw_auc": 0.993073593073593,
+      "vision_auc": 0.9049062049062049,
+      "delta": -0.08816738816738812
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "107_WSD_id_79_WebService_tr_1095_1st_1195.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 10.778795315819732,
+        "kurtosis": 18.919021417574818,
+        "excursion": 1.511350624844589,
+        "novelty_frac": 0.02234408727612158,
+        "z_disp": 1.1205359549116722,
+        "z_ratio_labelled": 0.8328093454679777
+      },
+      "raw_auc": 0.9471069677871148,
+      "vision_auc": 0.8887648809523809,
+      "delta": -0.05834208683473385
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "564_YAHOO_id_14_Synthetic_tr_500_1st_658.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.340285192553161,
+        "kurtosis": -0.16694752029929782,
+        "excursion": 3.2733732771239943,
+        "novelty_frac": 0.6308360477741585,
+        "z_disp": 0.6786213180902045,
+        "z_ratio_labelled": 3.596920438727393
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "271_IOPS_id_12_WebService_tr_500_1st_341.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 33.62089759160278,
+        "kurtosis": 77.53457180698595,
+        "excursion": 2.016490145732428,
+        "novelty_frac": 0.07339449541284404,
+        "z_disp": 1.2422328872777773,
+        "z_ratio_labelled": 2.247670146605246
+      },
+      "raw_auc": 0.8813501584762582,
+      "vision_auc": 0.6441689623507805,
+      "delta": -0.23718119612547772
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "051_WSD_id_23_WebService_tr_3919_1st_5154.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 16.49483934010316,
+        "kurtosis": 47.49800984864859,
+        "excursion": 1.6511664775582444,
+        "novelty_frac": 0.03121544611720677,
+        "z_disp": 1.5619055756758389,
+        "z_ratio_labelled": 1.0875701660879589
+      },
+      "raw_auc": 0.9283500507156541,
+      "vision_auc": 0.9528626169277584,
+      "delta": 0.024512566212104292
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "386_UCR_id_84_Environment_tr_2046_1st_5703.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3.158995820933724,
+        "kurtosis": 3.8673705704900083,
+        "excursion": 1.328834132429354,
+        "novelty_frac": 0.013196480938416423,
+        "z_disp": 1.3358739514240323,
+        "z_ratio_labelled": 2.6445096122297675
+      },
+      "raw_auc": 0.7382532864766367,
+      "vision_auc": 0.9639463751138879,
+      "delta": 0.22569308863725124
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "742_YAHOO_id_192_Synthetic_tr_500_1st_658.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 17.678031979421394,
+        "kurtosis": -0.37548058268504914,
+        "excursion": 5.27724735052783,
+        "novelty_frac": 0.9142236699239956,
+        "z_disp": 0.6654084018531231,
+        "z_ratio_labelled": 3.453541147888184
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "566_YAHOO_id_16_Synthetic_tr_500_1st_623.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.8087243750205573,
+        "kurtosis": -0.008658876274914906,
+        "excursion": 2.1613946412399847,
+        "novelty_frac": 0.23995656894679696,
+        "z_disp": 1.1949578852654887,
+        "z_ratio_labelled": 2.722372165880138
+      },
+      "raw_auc": 0.759180790960452,
+      "vision_auc": 1.0,
+      "delta": 0.240819209039548
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "422_UCR_id_120_Facility_tr_50000_1st_150720.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 25.319067982900748,
+        "kurtosis": 4.427703057327407,
+        "excursion": 1.1036816030571837,
+        "novelty_frac": 0.00041251151427770436,
+        "z_disp": 1.2571661663330773,
+        "z_ratio_labelled": 1.5549757919689473
+      },
+      "raw_auc": 0.4046184738955823,
+      "vision_auc": 0.6211512717536813,
+      "delta": 0.21653279785809904
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "297_TODS_id_11_Synthetic_tr_500_1st_7.csv",
+      "stratum": "U_locality_t2",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3.868460152829368,
+        "kurtosis": 0.17828453798862354,
+        "excursion": 5.173042041741017,
+        "novelty_frac": 0.924,
+        "z_disp": 0.5462314198711239,
+        "z_ratio_labelled": 1.1947744464629473
+      },
+      "raw_auc": 0.6442546911237613,
+      "vision_auc": 0.9797807294960995,
+      "delta": 0.3355260383723382
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "027_NAB_id_27_Facility_tr_757_1st_2582.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3.6906432361401458,
+        "kurtosis": 6.561843554767805,
+        "excursion": 2.3403704712607043,
+        "novelty_frac": 0.0021987686895338612,
+        "z_disp": 0.9061761946345948,
+        "z_ratio_labelled": 0.8924240498098344
+      },
+      "raw_auc": 0.6402482269503547,
+      "vision_auc": 0.6904255319148936,
+      "delta": 0.05017730496453898
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "280_NEK_id_4_WebService_tr_500_1st_231.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 5.659436659451817,
+        "kurtosis": -0.15833232090118798,
+        "excursion": 2.3663890283259015,
+        "novelty_frac": 0.0017452006980802793,
+        "z_disp": 0.782327092338126,
+        "z_ratio_labelled": 1.3935740353876638
+      },
+      "raw_auc": 0.9446428571428571,
+      "vision_auc": 0.7857142857142857,
+      "delta": -0.15892857142857142
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "500_UCR_id_198_Facility_tr_7482_1st_23357.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 5.822222336906466,
+        "kurtosis": 33.90486900848383,
+        "excursion": 0.999999999999617,
+        "novelty_frac": 0.0,
+        "z_disp": 0.8022234420319244,
+        "z_ratio_labelled": 0.6153699121145677
+      },
+      "raw_auc": 0.3511554621848739,
+      "vision_auc": 0.9842436974789915,
+      "delta": 0.6330882352941176
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "810_Exathlon_id_1_Facility_tr_10766_1st_12590.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 46.03671350261957,
+        "kurtosis": 1.458773712492789,
+        "excursion": 0.9190494449017372,
+        "novelty_frac": 0.0,
+        "z_disp": 1.1751432541057416,
+        "z_ratio_labelled": 4.353775899163055
+      },
+      "raw_auc": 0.9894954778249972,
+      "vision_auc": 0.9944716864625331,
+      "delta": 0.004976208637535895
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "336_UCR_id_34_Facility_tr_32191_1st_124159.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.7686328935095608,
+        "kurtosis": -0.9488052003166745,
+        "excursion": 0.8419281650303514,
+        "novelty_frac": 0.0,
+        "z_disp": 1.0523910299173278,
+        "z_ratio_labelled": 1.2694695650338614
+      },
+      "raw_auc": 0.6770340320036061,
+      "vision_auc": 0.7323642100518368,
+      "delta": 0.055330178048230705
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "839_Exathlon_id_30_Facility_tr_10766_1st_12590.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 958.1792042033323,
+        "kurtosis": 96.55040649450657,
+        "excursion": 4.093863348984809,
+        "novelty_frac": 0.002198142414860681,
+        "z_disp": 0.8815710014649301,
+        "z_ratio_labelled": 15.126304267253895
+      },
+      "raw_auc": 0.994544331844103,
+      "vision_auc": 0.44488031673386363,
+      "delta": -0.5496640151102393
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "811_Exathlon_id_2_Facility_tr_10766_1st_12590.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 279.6427540461943,
+        "kurtosis": 1.8770889013603966,
+        "excursion": 1.3799217510204629,
+        "novelty_frac": 0.005077399380804953,
+        "z_disp": 1.1152521774334654,
+        "z_ratio_labelled": 11.61677129544694
+      },
+      "raw_auc": 0.9984962406015038,
+      "vision_auc": 0.9831971232428898,
+      "delta": -0.015299117358614
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "211_SMD_id_34_Facility_tr_5925_1st_17580.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3367.744487500508,
+        "kurtosis": 171.77730981529731,
+        "excursion": 24.068807753117508,
+        "novelty_frac": 0.006637417032287096,
+        "z_disp": 0.7359027321454749,
+        "z_ratio_labelled": 23.55366534762725
+      },
+      "raw_auc": 0.9383608815426997,
+      "vision_auc": 0.9659090909090909,
+      "delta": 0.02754820936639124
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "483_UCR_id_181_Medical_tr_2499_1st_6508.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 3.1471725741033336,
+        "kurtosis": 4.652677548279484,
+        "excursion": 0.9939370424272886,
+        "novelty_frac": 0.0,
+        "z_disp": 0.535864350452304,
+        "z_ratio_labelled": 0.6293407571895994
+      },
+      "raw_auc": 0.9374712643678161,
+      "vision_auc": 0.9261609195402298,
+      "delta": -0.011310344827586305
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "169_Daphnet_id_1_HumanActivity_tr_9693_1st_20732.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 20779.065462637373,
+        "kurtosis": 22.042418145112745,
+        "excursion": 3.28414186224255,
+        "novelty_frac": 0.013720298476668615,
+        "z_disp": 0.30795155570400407,
+        "z_ratio_labelled": 1.1964263782421456
+      },
+      "raw_auc": 0.937928536938677,
+      "vision_auc": 0.8355866731047803,
+      "delta": -0.10234186383389665
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "524_UCR_id_222_Medical_tr_1875_1st_5865.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 1.674216773408133,
+        "kurtosis": -0.8484159305507362,
+        "excursion": 1.0442073048907963,
+        "novelty_frac": 0.002488446498400284,
+        "z_disp": 0.9196200702216398,
+        "z_ratio_labelled": 0.9988305911368585
+      },
+      "raw_auc": 0.41407129455909947,
+      "vision_auc": 0.7545028142589117,
+      "delta": 0.3404315196998123
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "284_NEK_id_8_WebService_tr_500_1st_976.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 9.570212381215798,
+        "kurtosis": 1.182444999982252,
+        "excursion": 3.1803163095745814,
+        "novelty_frac": 0.1012216404886562,
+        "z_disp": 1.0979986220120335,
+        "z_ratio_labelled": 4.329578470215669
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "548_SMAP_id_18_Sensor_tr_2094_1st_5600.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 24.27224547056013,
+        "kurtosis": 58.92685608571519,
+        "excursion": 7.254448693748466,
+        "novelty_frac": 1.0,
+        "z_disp": 0.8128470607725921,
+        "z_ratio_labelled": 1.5500851077223596
+      },
+      "raw_auc": 0.8657615112160567,
+      "vision_auc": 0.8721959858323496,
+      "delta": 0.006434474616292873
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "816_Exathlon_id_7_Facility_tr_10766_1st_12590.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 958.1792042033323,
+        "kurtosis": 96.55040649450657,
+        "excursion": 4.093863348984809,
+        "novelty_frac": 0.002198142414860681,
+        "z_disp": 0.8815710014649301,
+        "z_ratio_labelled": 15.126304267253895
+      },
+      "raw_auc": 0.994544331844103,
+      "vision_auc": 0.44488031673386363,
+      "delta": -0.5496640151102393
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "424_UCR_id_122_Medical_tr_7464_1st_12190.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 2.1878272471041824,
+        "kurtosis": 1.3981951444947125,
+        "excursion": 1.1087149486095222,
+        "novelty_frac": 0.00013395847287340923,
+        "z_disp": 1.762526370578558,
+        "z_ratio_labelled": 1.0301562997101557
+      },
+      "raw_auc": 0.0008965929468021422,
+      "vision_auc": 0.9985056784219963,
+      "delta": 0.9976090854751942
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "531_SMAP_id_1_Sensor_tr_1811_1st_4510.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 0.0,
+        "kurtosis": NaN,
+        "excursion": 2e+20,
+        "novelty_frac": 0.00018406037180195104,
+        "z_disp": 0.0,
+        "z_ratio_labelled": 0.0
+      },
+      "raw_auc": 0.5,
+      "vision_auc": 0.7298126614987082,
+      "delta": 0.22981266149870816
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "357_UCR_id_55_Facility_tr_12500_1st_46600.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 57.058532161384264,
+        "kurtosis": 14.232813658250688,
+        "excursion": 1.0686381130037892,
+        "novelty_frac": 0.00042666666666666667,
+        "z_disp": 1.5920149733279783,
+        "z_ratio_labelled": 1.5341871986138413
+      },
+      "raw_auc": 0.9369049841329102,
+      "vision_auc": 0.9859996266567109,
+      "delta": 0.04909464252380069
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "821_Exathlon_id_12_Facility_tr_6985_1st_7085.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 196.35811959455356,
+        "kurtosis": 60.01721670772372,
+        "excursion": 5.067791882191043,
+        "novelty_frac": 0.1127470754336426,
+        "z_disp": 0.8792545703909243,
+        "z_ratio_labelled": 11.578928533641653
+      },
+      "raw_auc": 0.9665733762644652,
+      "vision_auc": 0.8821031575438012,
+      "delta": -0.08447021872066396
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "838_Exathlon_id_29_Facility_tr_10766_1st_12590.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 58.48547408240209,
+        "kurtosis": 35.25389450049147,
+        "excursion": 1.9610497812954293,
+        "novelty_frac": 0.0002476780185758514,
+        "z_disp": 0.5505804311759447,
+        "z_ratio_labelled": 4.101160851175004
+      },
+      "raw_auc": 0.9860230285859576,
+      "vision_auc": 0.84578111946533,
+      "delta": -0.14024190912062762
+    },
+    {
+      "subset": "TSB-AD-U",
+      "series": "364_UCR_id_62_Sensor_tr_2833_1st_5988.csv",
+      "stratum": "U_locality_t3",
+      "n_channels": 1,
+      "proxies": {
+        "tail_ratio": 6.012203284968763,
+        "kurtosis": 126.11490729062314,
+        "excursion": 1.02546700482638,
+        "novelty_frac": 0.0007057993177273262,
+        "z_disp": 1.0405020928900939,
+        "z_ratio_labelled": 1.200574835778047
+      },
+      "raw_auc": 0.5688185140073082,
+      "vision_auc": 0.6414738124238734,
+      "delta": 0.07265529841656515
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "090_SVDB_id_7_Medical_tr_12157_1st_12257.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 75.63601334322227,
+        "kurtosis": 25.325336345974115,
+        "excursion": 1.202359076557523,
+        "novelty_frac": 0.0007002616071664509,
+        "z_disp": 2.711378830866969,
+        "z_ratio_labelled": 1.5253006615107094
+      },
+      "raw_auc": 0.8403486394557824,
+      "vision_auc": 0.825214609653385,
+      "delta": -0.01513402980239742
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "022_MITDB_id_4_Medical_tr_50000_1st_54253.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 7.547925129150738,
+        "kurtosis": 25.17089014416044,
+        "excursion": 1.3187876835287549,
+        "novelty_frac": 2.2e-05,
+        "z_disp": 1.2049211518369174,
+        "z_ratio_labelled": 0.9227067078313831
+      },
+      "raw_auc": 0.441158263979641,
+      "vision_auc": 0.4550347341632849,
+      "delta": 0.013876470183643907
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "116_TAO_id_1_Environment_tr_500_1st_3.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 3,
+      "proxies": {
+        "tail_ratio": 2.509350135810715,
+        "kurtosis": -0.7094761964551912,
+        "excursion": 0.9999999999997919,
+        "novelty_frac": 0.0,
+        "z_disp": 5.417975989111101,
+        "z_ratio_labelled": 6.395785954938542
+      },
+      "raw_auc": 1.0,
+      "vision_auc": 0.02352941176470588,
+      "delta": -0.9764705882352941
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "124_TAO_id_9_Environment_tr_500_1st_1.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 3,
+      "proxies": {
+        "tail_ratio": 2.6697014897531526,
+        "kurtosis": -0.6378505536037142,
+        "excursion": 0.999999999999771,
+        "novelty_frac": 0.0,
+        "z_disp": 4.245840675469708,
+        "z_ratio_labelled": 6.39534698393981
+      },
+      "raw_auc": 0.3627659574468085,
+      "vision_auc": 0.0031914893617021275,
+      "delta": -0.3595744680851064
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "114_SVDB_id_31_Medical_tr_25000_1st_63090.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 2.6471364699973337,
+        "kurtosis": 1.0112861685924743,
+        "excursion": 1.0275150075426807,
+        "novelty_frac": 6.666666666666667e-06,
+        "z_disp": 2.1535943489595204,
+        "z_ratio_labelled": 0.9032319508176587
+      },
+      "raw_auc": 0.5223259334006054,
+      "vision_auc": 0.49911705348133195,
+      "delta": -0.02320887991927345
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "027_MITDB_id_9_Medical_tr_25000_1st_52255.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 45.84355759041988,
+        "kurtosis": 19.439732312094623,
+        "excursion": 1.0090894109905901,
+        "novelty_frac": 6.666666666666667e-06,
+        "z_disp": 1.0733262707367082,
+        "z_ratio_labelled": 1.6435842674414969
+      },
+      "raw_auc": 0.7678571428571428,
+      "vision_auc": 0.9043778801843317,
+      "delta": 0.13652073732718895
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "093_SVDB_id_10_Medical_tr_500_1st_37.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 14.892455395504124,
+        "kurtosis": 4.657857063431704,
+        "excursion": 2.049967273441245,
+        "novelty_frac": 0.011961722488038277,
+        "z_disp": 1.9006625723345383,
+        "z_ratio_labelled": 1.7567631411191533
+      },
+      "raw_auc": 0.5451862307914408,
+      "vision_auc": 0.44145199063231855,
+      "delta": -0.10373424015912225
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "111_SVDB_id_28_Medical_tr_1791_1st_1891.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 3.756406608849529,
+        "kurtosis": 3.4147942837223804,
+        "excursion": 1.382124465392129,
+        "novelty_frac": 0.0019771750018590696,
+        "z_disp": 1.0090447161452492,
+        "z_ratio_labelled": 1.458874311838508
+      },
+      "raw_auc": 0.636495830714118,
+      "vision_auc": 0.7469194241008201,
+      "delta": 0.11042359338670216
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "107_SVDB_id_24_Medical_tr_32805_1st_32905.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 9.443415912987374,
+        "kurtosis": 22.22428231818458,
+        "excursion": 1.0497108859777153,
+        "novelty_frac": 7.591285204585136e-06,
+        "z_disp": 1.6240268735097936,
+        "z_ratio_labelled": 1.3706098052308051
+      },
+      "raw_auc": 0.6296221570066031,
+      "vision_auc": 0.7922597212032282,
+      "delta": 0.16263756419662512
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "102_SVDB_id_19_Medical_tr_50000_1st_107354.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 23.98860098520089,
+        "kurtosis": 915.463511179333,
+        "excursion": 2.3698665063927438,
+        "novelty_frac": 0.0005875831485587583,
+        "z_disp": 1.2583694178340987,
+        "z_ratio_labelled": 1.9403971567750626
+      },
+      "raw_auc": 0.9241530208921513,
+      "vision_auc": 0.9140880858272163,
+      "delta": -0.010064935064934999
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "098_SVDB_id_15_Medical_tr_500_1st_303.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 112.8882227595779,
+        "kurtosis": 62.17316329854282,
+        "excursion": 3.1884170307258417,
+        "novelty_frac": 0.004360591561548499,
+        "z_disp": 1.4172026614658688,
+        "z_ratio_labelled": 1.0811819483704104
+      },
+      "raw_auc": 0.5581822647998035,
+      "vision_auc": 0.4673151559813314,
+      "delta": -0.0908671088184721
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "100_SVDB_id_17_Medical_tr_17803_1st_17903.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 59.135095670462405,
+        "kurtosis": 71.48037956227036,
+        "excursion": 1.2947904585421783,
+        "novelty_frac": 0.0002131495510537581,
+        "z_disp": 2.980202073618218,
+        "z_ratio_labelled": 1.6143524751261
+      },
+      "raw_auc": 0.6947649572649572,
+      "vision_auc": 0.7572649572649572,
+      "delta": 0.0625
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "095_SVDB_id_12_Medical_tr_6264_1st_6364.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 5.937345173225556,
+        "kurtosis": 14.692152263224152,
+        "excursion": 1.8130762688788924,
+        "novelty_frac": 9.369311489452832e-05,
+        "z_disp": 1.8673104137118537,
+        "z_ratio_labelled": 1.3294294474693114
+      },
+      "raw_auc": 0.560570824524313,
+      "vision_auc": 0.6955813953488372,
+      "delta": 0.13501057082452428
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "105_SVDB_id_22_Medical_tr_500_1st_417.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 4.143521312718309,
+        "kurtosis": 64.46827962556125,
+        "excursion": 1.4145652332265408,
+        "novelty_frac": 0.0002709030100334448,
+        "z_disp": 1.3296894893457218,
+        "z_ratio_labelled": 1.3036752718801636
+      },
+      "raw_auc": 0.6672935779816515,
+      "vision_auc": 0.7006605504587157,
+      "delta": 0.033366972477064216
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "092_SVDB_id_9_Medical_tr_2674_1st_2774.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 9.251662294415645,
+        "kurtosis": 16.232018685458907,
+        "excursion": 2.3343766823999825,
+        "novelty_frac": 0.0014227624425845093,
+        "z_disp": 1.6365036929564731,
+        "z_ratio_labelled": 2.0441014838679323
+      },
+      "raw_auc": 0.886904761904762,
+      "vision_auc": 0.8617216117216118,
+      "delta": -0.025183150183150205
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "082_LTDB_id_4_Medical_tr_4456_1st_4556.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 14.223448464675798,
+        "kurtosis": 9.528096594667565,
+        "excursion": 1.6685911443742498,
+        "novelty_frac": 0.00025119316754584274,
+        "z_disp": 2.605485605608436,
+        "z_ratio_labelled": 1.5439911011555325
+      },
+      "raw_auc": 0.7515946726505849,
+      "vision_auc": 0.7827713021255377,
+      "delta": 0.03117662947495281
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "094_SVDB_id_11_Medical_tr_20100_1st_23611.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 26.856205517748556,
+        "kurtosis": 134.59807072797267,
+        "excursion": 1.8305526919973003,
+        "novelty_frac": 0.0002736318407960199,
+        "z_disp": 1.8953838009159487,
+        "z_ratio_labelled": 1.2076506757698071
+      },
+      "raw_auc": 0.8061314336028175,
+      "vision_auc": 0.8629232370127271,
+      "delta": 0.056791803409909636
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "101_SVDB_id_18_Medical_tr_1851_1st_1951.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 17.381898012563905,
+        "kurtosis": 75.17388169446761,
+        "excursion": 2.6318594051027056,
+        "novelty_frac": 0.003375643735041501,
+        "z_disp": 1.5740099887488148,
+        "z_ratio_labelled": 1.6546923201571782
+      },
+      "raw_auc": 0.8335044206761814,
+      "vision_auc": 0.5936620417894632,
+      "delta": -0.2398423788867181
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "085_SVDB_id_2_Medical_tr_50000_1st_54982.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 9.090029707078925,
+        "kurtosis": 48.2391850861636,
+        "excursion": 1.4806432269779861,
+        "novelty_frac": 0.00029656319290465635,
+        "z_disp": 1.3219306911854416,
+        "z_ratio_labelled": 1.145144477934833
+      },
+      "raw_auc": 0.5967033263248693,
+      "vision_auc": 0.7057118982155373,
+      "delta": 0.10900857189066793
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "023_MITDB_id_5_Medical_tr_25000_1st_36913.csv",
+      "stratum": "M_D2-5",
+      "n_channels": 2,
+      "proxies": {
+        "tail_ratio": 9.134838137114697,
+        "kurtosis": 3.9829458650669274,
+        "excursion": 1.0688984525609628,
+        "novelty_frac": 5.333333333333333e-05,
+        "z_disp": 1.3759368486025494,
+        "z_ratio_labelled": 2.6767026559941476
+      },
+      "raw_auc": 0.7973007063572148,
+      "vision_auc": 0.9104439959636731,
+      "delta": 0.11314328960645825
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "034_GHL_id_3_Sensor_tr_50000_1st_122001.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 30.72568770234639,
+        "kurtosis": 19.6537415744332,
+        "excursion": 1.881395260916449,
+        "novelty_frac": 0.029213489453929955,
+        "z_disp": 1.3433849015747166,
+        "z_ratio_labelled": 0.8823084602619948
+      },
+      "raw_auc": 0.35699693564862106,
+      "vision_auc": 0.5644243397052385,
+      "delta": 0.20742740405661747
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "037_GHL_id_6_Sensor_tr_50000_1st_80001.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 80.33842820065429,
+        "kurtosis": 157.56594941831185,
+        "excursion": 1.9167818989313876,
+        "novelty_frac": 0.030420148076205807,
+        "z_disp": 1.5472195478440616,
+        "z_ratio_labelled": 1.0369648366905562
+      },
+      "raw_auc": 0.20926216640502357,
+      "vision_auc": 0.22072213500784932,
+      "delta": 0.011459968602825749
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "046_GHL_id_15_Sensor_tr_50000_1st_156462.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 76.86462230867635,
+        "kurtosis": 114.43950704553968,
+        "excursion": 1.980041514255995,
+        "novelty_frac": 0.0313075105815084,
+        "z_disp": 1.6438466700781604,
+        "z_ratio_labelled": 1.8893198609997535
+      },
+      "raw_auc": 0.9394760614272809,
+      "vision_auc": 0.3128952122854562,
+      "delta": -0.6265808491418248
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "001_Genesis_id_1_Sensor_tr_4055_1st_15538.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 18,
+      "proxies": {
+        "tail_ratio": 6.1836885532362205,
+        "kurtosis": 7.375820176209945,
+        "excursion": 0.9999999999999529,
+        "novelty_frac": 0.0,
+        "z_disp": 0.6306121325001567,
+        "z_ratio_labelled": 1.0983965130846596
+      },
+      "raw_auc": 0.8838283828382838,
+      "vision_auc": 0.928052805280528,
+      "delta": 0.04422442244224423
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "196_Exathlon_id_23_Facility_tr_11665_1st_13484.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 18,
+      "proxies": {
+        "tail_ratio": 501.3381917260823,
+        "kurtosis": 9.069719243885297,
+        "excursion": 2.063147057439074,
+        "novelty_frac": 0.0038386436157546314,
+        "z_disp": 1.6323385138241835,
+        "z_ratio_labelled": 24.3692879009468
+      },
+      "raw_auc": 0.9974085804779729,
+      "vision_auc": 0.9905941069200499,
+      "delta": -0.006814473557922973
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "043_GHL_id_12_Sensor_tr_39938_1st_40038.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 5.555437142393554,
+        "kurtosis": 3.021176632123633,
+        "excursion": 2.5021735611737,
+        "novelty_frac": 0.035406782263694196,
+        "z_disp": 1.321267789486557,
+        "z_ratio_labelled": 0.8251548748179248
+      },
+      "raw_auc": 0.03242147922998985,
+      "vision_auc": 0.053263858734983356,
+      "delta": 0.020842379504993507
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "053_GHL_id_22_Sensor_tr_50000_1st_126448.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 38.64469367552622,
+        "kurtosis": 18.249391489739352,
+        "excursion": 1.867588544459119,
+        "novelty_frac": 0.028875246094850596,
+        "z_disp": 1.215990996256483,
+        "z_ratio_labelled": 1.0888517753001208
+      },
+      "raw_auc": 0.4317619540281589,
+      "vision_auc": 0.6308982951734066,
+      "delta": 0.19913634114524764
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "189_Exathlon_id_16_Facility_tr_11663_1st_13482.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 12,
+      "proxies": {
+        "tail_ratio": 843.3315175189327,
+        "kurtosis": 8.86180274985426,
+        "excursion": 0.9313040190495521,
+        "novelty_frac": 0.0,
+        "z_disp": 2.2127940083781574,
+        "z_ratio_labelled": 23.45407207748542
+      },
+      "raw_auc": 0.9948258635455324,
+      "vision_auc": 0.9616519174041298,
+      "delta": -0.033173946141402566
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "198_Exathlon_id_25_Facility_tr_12538_1st_12638.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 22.614395517016327,
+        "kurtosis": 8.75238605163897,
+        "excursion": 1205249089744818.5,
+        "novelty_frac": 0.03769330405622144,
+        "z_disp": 2.475476771438319,
+        "z_ratio_labelled": 3.4440789320338445
+      },
+      "raw_auc": 0.7534806540391776,
+      "vision_auc": 0.3933381900598996,
+      "delta": -0.360142463979278
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "048_GHL_id_17_Sensor_tr_50000_1st_154001.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 43.5581977246048,
+        "kurtosis": 93.56941936797696,
+        "excursion": 2.006006026485941,
+        "novelty_frac": 0.03031032424696116,
+        "z_disp": 1.5262035129325824,
+        "z_ratio_labelled": 0.9429593792830856
+      },
+      "raw_auc": 0.42826446280991737,
+      "vision_auc": 0.7912809917355371,
+      "delta": 0.36301652892561975
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "177_Exathlon_id_4_Facility_tr_11665_1st_13484.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 18,
+      "proxies": {
+        "tail_ratio": 501.3381917260823,
+        "kurtosis": 9.069719243885297,
+        "excursion": 2.063147057439074,
+        "novelty_frac": 0.0038386436157546314,
+        "z_disp": 1.6323385138241835,
+        "z_ratio_labelled": 24.3692879009468
+      },
+      "raw_auc": 0.9974085804779729,
+      "vision_auc": 0.9905941069200499,
+      "delta": -0.006814473557922973
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "054_GHL_id_23_Sensor_tr_50000_1st_135001.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 27.66891184075856,
+        "kurtosis": 9.81428512239786,
+        "excursion": 1.971354752803929,
+        "novelty_frac": 0.03185136660492439,
+        "z_disp": 1.3051621636236468,
+        "z_ratio_labelled": 1.1527559666773108
+      },
+      "raw_auc": 0.46986427421210025,
+      "vision_auc": 0.6566981059734682,
+      "delta": 0.18683383176136797
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "143_CATSv2_id_6_Sensor_tr_50000_1st_60232.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 17,
+      "proxies": {
+        "tail_ratio": 1252.1243921005823,
+        "kurtosis": 365.85260537545645,
+        "excursion": 3.954851471312999,
+        "novelty_frac": 6.509803921568627e-05,
+        "z_disp": 1.0187751386664752,
+        "z_ratio_labelled": 1.1964173249750405
+      },
+      "raw_auc": 0.8379713326446281,
+      "vision_auc": 0.719427944214876,
+      "delta": -0.1185433884297521
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "045_GHL_id_14_Sensor_tr_50000_1st_85076.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 52.18099101097001,
+        "kurtosis": 27.893063698172867,
+        "excursion": 1.9127111820803366,
+        "novelty_frac": 0.03103803869377713,
+        "z_disp": 1.1720870326419797,
+        "z_ratio_labelled": 1.3852480741194957
+      },
+      "raw_auc": 0.9492150706436421,
+      "vision_auc": 0.23979591836734693,
+      "delta": -0.7094191522762952
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "047_GHL_id_16_Sensor_tr_50000_1st_77001.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 30.100258461302627,
+        "kurtosis": 9.891713178413235,
+        "excursion": 1.8572175488609615,
+        "novelty_frac": 0.02789244562930984,
+        "z_disp": 1.2197946300906635,
+        "z_ratio_labelled": 0.7223391961713578
+      },
+      "raw_auc": 0.18869475847893113,
+      "vision_auc": 0.44850976361767725,
+      "delta": 0.2598150051387461
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "192_Exathlon_id_19_Facility_tr_11665_1st_13484.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 18,
+      "proxies": {
+        "tail_ratio": 501.3381917260823,
+        "kurtosis": 9.069719243885297,
+        "excursion": 2.063147057439074,
+        "novelty_frac": 0.0038386436157546314,
+        "z_disp": 1.6323385138241835,
+        "z_ratio_labelled": 24.3692879009468
+      },
+      "raw_auc": 0.9974085804779729,
+      "vision_auc": 0.9905941069200499,
+      "delta": -0.006814473557922973
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "184_Exathlon_id_11_Facility_tr_11665_1st_13484.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 18,
+      "proxies": {
+        "tail_ratio": 501.3381917260823,
+        "kurtosis": 9.069719243885297,
+        "excursion": 2.063147057439074,
+        "novelty_frac": 0.0038386436157546314,
+        "z_disp": 1.6323385138241835,
+        "z_ratio_labelled": 24.3692879009468
+      },
+      "raw_auc": 0.9974085804779729,
+      "vision_auc": 0.9905941069200499,
+      "delta": -0.006814473557922973
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "181_Exathlon_id_8_Facility_tr_11663_1st_13482.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 12,
+      "proxies": {
+        "tail_ratio": 843.3315175189327,
+        "kurtosis": 8.86180274985426,
+        "excursion": 0.9313040190495521,
+        "novelty_frac": 0.0,
+        "z_disp": 2.2127940083781574,
+        "z_ratio_labelled": 23.45407207748542
+      },
+      "raw_auc": 0.9948258635455324,
+      "vision_auc": 0.9616519174041298,
+      "delta": -0.033173946141402566
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "056_GHL_id_25_Sensor_tr_50000_1st_105568.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 37.62140793607197,
+        "kurtosis": 14.067661918741386,
+        "excursion": 2.0087468768306116,
+        "novelty_frac": 0.03106189818383667,
+        "z_disp": 1.4068062302512936,
+        "z_ratio_labelled": 1.1266452030989746
+      },
+      "raw_auc": 0.3025549081129538,
+      "vision_auc": 0.2554908112953832,
+      "delta": -0.04706409681757062
+    },
+    {
+      "subset": "TSB-AD-M",
+      "series": "035_GHL_id_4_Sensor_tr_50000_1st_90001.csv",
+      "stratum": "M_D11-20",
+      "n_channels": 19,
+      "proxies": {
+        "tail_ratio": 19.110502354423318,
+        "kurtosis": 16.28853806322033,
+        "excursion": 1.9720132314647119,
+        "novelty_frac": 0.02851138887144261,
+        "z_disp": 1.2754802093172424,
+        "z_ratio_labelled": 0.7721482227748674
+      },
+      "raw_auc": 0.22368961973278523,
+      "vision_auc": 0.4325282631038027,
+      "delta": 0.20883864337101748
+    }
+  ]
+}

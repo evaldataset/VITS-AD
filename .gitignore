@@ -1,0 +1,112 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.python-version
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Datasets and outputs (never commit)
+# Anchored to repo root (leading slash) so they do NOT also match source dirs
+# such as src/data/ and configs/data/, which MUST be tracked.
+/data/
+/results/
+/results_local/
+/results_nas/
+/outputs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.parquet
+*.feather
+
+# Logs
+*.log
+logs/
+wandb/
+mlruns/
+
+# Hydra
+.hydra/
+multirun/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local scratch
+scratch/
+tmp/
+.tmp/
+
+# Claude Code / OMC internal state (do not track)
+.claude/
+.omc/
+.sisyphus
+**/.omc/
+configs/experiment/.omc/
+scripts/.omc/
+
+# Local baselines symlink (large / non-deterministic); /data/ and /outputs/
+# are already ignored (anchored) in the Datasets block above.
+/baselines/
+# Third-party code cloned for evaluation only (e.g. PatchTrAD has no licence; never vendor).
+/baselines_ext/
+
+# Session-internal markdown artifacts (not part of paper deliverable)
+AUDIT.md
+CHECK.md
+PLAN.md
+RESEARCH.md
+REVISION.md
+STATUS_*.md
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Session-internal: manuscript drafts, reviewer discussion, submission strategy.
+# Not part of the public reproducibility artifact.
+/paper/
+/REVIEW.md
+/REVIEW2.md
+/CLAUDE.md
+AGENTS.md

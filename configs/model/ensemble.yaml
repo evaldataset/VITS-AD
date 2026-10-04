@@ -1,0 +1,17 @@
+name: ensemble-clip-dinov2
+pretrained: ensemble
+clip_pretrained: openai/clip-vit-base-patch16
+dinov2_pretrained: facebook/dinov2-base
+image_size: 224
+freeze: true
+extract_cls: false
+
+sequential: true
+load_both: false
+
+output_mode: selected
+default_backbone: clip
+
+renderer_backbone_map:
+  line_plot: clip
+  recurrence_plot: dinov2

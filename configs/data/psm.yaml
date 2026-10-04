@@ -1,0 +1,15 @@
+# PSM (Pooled Server Metrics) configuration
+name: psm
+raw_dir: data/raw/psm
+processed_dir: data/processed/psm
+num_features: 25
+# Train/test split now uses the official PSM train.csv / test.csv files; the
+# loader returns the boundary index automatically. `train_ratio` is kept only
+# as a fallback for ad-hoc time-based experiments.
+train_ratio: 0.5
+# Sliding window
+window_size: 100
+stride: 10
+# Normalization
+normalize: true
+norm_method: standard

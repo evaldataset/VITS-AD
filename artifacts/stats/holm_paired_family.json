@@ -1,0 +1,251 @@
+{
+  "family_size": 41,
+  "tests": [
+    {
+      "test": "AnomalyTransformer (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 1.6734066515863825e-10,
+      "p_holm": 6.8609672715041686e-09,
+      "survives_0.05": true
+    },
+    {
+      "test": "AnomalyTransformer (default) vs raw_flatten AUC-ROC",
+      "p_raw": 2.2404418034712786e-10,
+      "p_holm": 8.961767213885115e-09,
+      "survives_0.05": true
+    },
+    {
+      "test": "TimesNet (default) vs raw_flatten AUC-ROC",
+      "p_raw": 3.2715597182889192e-09,
+      "p_holm": 1.2759082901326785e-07,
+      "survives_0.05": true
+    },
+    {
+      "test": "PatchTrAD (authors' defaults) vs raw_flatten AUC-ROC",
+      "p_raw": 1.2168054701010604e-08,
+      "p_holm": 4.62386078638403e-07,
+      "survives_0.05": true
+    },
+    {
+      "test": "rendered vs raw_meanpool AUC-ROC",
+      "p_raw": 2.393450043009862e-08,
+      "p_holm": 8.855765159136489e-07,
+      "survives_0.05": true
+    },
+    {
+      "test": "random-init vs pretrained VUS-PR",
+      "p_raw": 3.573159744996561e-07,
+      "p_holm": 1.2863375081987618e-05,
+      "survives_0.05": true
+    },
+    {
+      "test": "AnomalyTransformer (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 4.6717218229074723e-07,
+      "p_holm": 1.6351026380176153e-05,
+      "survives_0.05": true
+    },
+    {
+      "test": "AnomalyTransformer (default) vs raw_flatten VUS-PR",
+      "p_raw": 9.213215216228397e-07,
+      "p_holm": 3.132493173517655e-05,
+      "survives_0.05": true
+    },
+    {
+      "test": "USAD (default) vs raw_flatten AUC-ROC",
+      "p_raw": 7.55746944981963e-06,
+      "p_holm": 0.0002493964918440478,
+      "survives_0.05": true
+    },
+    {
+      "test": "PatchTrAD (authors' defaults) vs raw_flatten VUS-PR",
+      "p_raw": 2.2061979821321058e-05,
+      "p_holm": 0.0007059833542822739,
+      "survives_0.05": true
+    },
+    {
+      "test": "Sub_PCA (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 2.4502549583277474e-05,
+      "p_holm": 0.0007595790370816017,
+      "survives_0.05": true
+    },
+    {
+      "test": "MCD (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 2.5407538995571817e-05,
+      "p_holm": 0.0007622261698671545,
+      "survives_0.05": true
+    },
+    {
+      "test": "random-init vs pretrained AUC-ROC",
+      "p_raw": 4.324294729566008e-05,
+      "p_holm": 0.0012540454715741422,
+      "survives_0.05": true
+    },
+    {
+      "test": "TimesNet (default) vs raw_flatten VUS-PR",
+      "p_raw": 9.122692472649752e-05,
+      "p_holm": 0.0025543538923419305,
+      "survives_0.05": true
+    },
+    {
+      "test": "Sub_PCA (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.0001220689365795332,
+      "p_holm": 0.0032958612876473965,
+      "survives_0.05": true
+    },
+    {
+      "test": "TimesNet (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 0.000322542720366873,
+      "p_holm": 0.008386110729538699,
+      "survives_0.05": true
+    },
+    {
+      "test": "USAD (default) vs raw_flatten VUS-PR",
+      "p_raw": 0.0003425198366232003,
+      "p_holm": 0.008562995915580008,
+      "survives_0.05": true
+    },
+    {
+      "test": "PCA (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.0010377618844153997,
+      "p_holm": 0.024906285225969594,
+      "survives_0.05": true
+    },
+    {
+      "test": "MCD (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.0012099897168706595,
+      "p_holm": 0.02782976348802517,
+      "survives_0.05": true
+    },
+    {
+      "test": "rendered vs raw_meanpool VUS-PR",
+      "p_raw": 0.0012193039631436513,
+      "p_holm": 0.02782976348802517,
+      "survives_0.05": true
+    },
+    {
+      "test": "USAD (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 0.003004270311016041,
+      "p_holm": 0.06308967653133686,
+      "survives_0.05": false
+    },
+    {
+      "test": "stratum M_D11-20 rendered vs raw_flatten VUS-PR",
+      "p_raw": 0.005068668908398948,
+      "p_holm": 0.10137337816797896,
+      "survives_0.05": false
+    },
+    {
+      "test": "PCA (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 0.0114950528876566,
+      "p_holm": 0.2184060048654754,
+      "survives_0.05": false
+    },
+    {
+      "test": "TimesNet (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.02801404950478365,
+      "p_holm": 0.5042528910861057,
+      "survives_0.05": false
+    },
+    {
+      "test": "rendered vs raw_flatten VUS-PR",
+      "p_raw": 0.039198862809347555,
+      "p_holm": 0.6663806677589085,
+      "survives_0.05": false
+    },
+    {
+      "test": "Sub_MCD (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 0.05715851138654205,
+      "p_holm": 0.9145361821846728,
+      "survives_0.05": false
+    },
+    {
+      "test": "stratum M_D2-5 rendered vs raw_flatten VUS-PR",
+      "p_raw": 0.058258056640625,
+      "p_holm": 0.9145361821846728,
+      "survives_0.05": false
+    },
+    {
+      "test": "ViT4TS AUC-ROC/vit4ts_vs_raw_flatten",
+      "p_raw": 0.06890003052758563,
+      "p_holm": 0.9646004273861988,
+      "survives_0.05": false
+    },
+    {
+      "test": "USAD (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.08035133793018559,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "Sub_MCD (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.1718798010336834,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "ViT4TS AUC-ROC/vit4ts_vs_ours_vision",
+      "p_raw": 0.2337176972223095,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "KShapeAD (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 0.2575320064747546,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "KShapeAD (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.29549571346992676,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "MatrixProfile (TSB-AD tuned) vs raw_flatten AUC-ROC",
+      "p_raw": 0.3239083452398184,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "rendered vs raw_flatten AUC-ROC",
+      "p_raw": 0.3836781527077342,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "MatrixProfile (TSB-AD tuned) vs raw_flatten VUS-PR",
+      "p_raw": 0.4096541930891914,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "ViT4TS VUS-PR/vit4ts_vs_ours_vision",
+      "p_raw": 0.5763403653645989,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "ViT4TS VUS-PR/vit4ts_vs_raw_flatten",
+      "p_raw": 0.6424100101810719,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "stratum U_locality_t3 rendered vs raw_flatten VUS-PR",
+      "p_raw": 0.7474753882655978,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "stratum U_locality_t1 rendered vs raw_flatten VUS-PR",
+      "p_raw": 0.9176315934670087,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    },
+    {
+      "test": "stratum U_locality_t2 rendered vs raw_flatten VUS-PR",
+      "p_raw": 0.9587607499379828,
+      "p_holm": 1.0,
+      "survives_0.05": false
+    }
+  ]
+}

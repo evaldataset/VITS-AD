@@ -1,0 +1,11 @@
+# MSL (Mars Science Laboratory) configuration
+name: msl
+raw_dir: data/raw/msl
+processed_dir: data/processed/msl
+num_features: 55
+# MSL has official train/test split
+train_ratio: null  # Use official split
+window_size: 100
+stride: 10
+normalize: true
+norm_method: standard

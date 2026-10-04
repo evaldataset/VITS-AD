@@ -1,0 +1,121 @@
+{
+  "upstream": "github.com/vilhess/PatchTrAD",
+  "upstream_commit": "012667d57cc052a58fdd28ffba3a0a56c1af7643",
+  "hyperparameters": "authors' defaults",
+  "n_scored": 100,
+  "n_failed": 0,
+  "all": {
+    "vs_raw_flatten": {
+      "VUS-PR": {
+        "n": 100,
+        "patchtrad_mean": 0.6104957359925489,
+        "reference_mean": 0.6739384453629281,
+        "delta": -0.06344270937037925,
+        "patchtrad_wins": 28,
+        "wilcoxon_p": 2.2061979821321058e-05
+      },
+      "AUC-ROC": {
+        "n": 100,
+        "patchtrad_mean": 0.6109436407588617,
+        "reference_mean": 0.7642758716738036,
+        "delta": -0.15333223091494208,
+        "patchtrad_wins": 23,
+        "wilcoxon_p": 1.2168054701010604e-08
+      }
+    },
+    "vs_vision": {
+      "VUS-PR": {
+        "n": 100,
+        "patchtrad_mean": 0.6104957359925489,
+        "reference_mean": 0.6508768905486789,
+        "delta": -0.04038115455613012,
+        "patchtrad_wins": 37,
+        "wilcoxon_p": 0.09202830136354354
+      },
+      "AUC-ROC": {
+        "n": 100,
+        "patchtrad_mean": 0.6109436407588617,
+        "reference_mean": 0.7762845326434815,
+        "delta": -0.16534089188461965,
+        "patchtrad_wins": 28,
+        "wilcoxon_p": 4.4761559752145757e-07
+      }
+    }
+  },
+  "univariate": {
+    "vs_raw_flatten": {
+      "VUS-PR": {
+        "n": 60,
+        "patchtrad_mean": 0.6516276780356579,
+        "reference_mean": 0.7326473625136077,
+        "delta": -0.08101968447794966,
+        "patchtrad_wins": 19,
+        "wilcoxon_p": 0.0026685478522502277
+      },
+      "AUC-ROC": {
+        "n": 60,
+        "patchtrad_mean": 0.6470882372582312,
+        "reference_mean": 0.8269659155915747,
+        "delta": -0.17987767833334348,
+        "patchtrad_wins": 15,
+        "wilcoxon_p": 8.436962661072308e-06
+      }
+    },
+    "vs_vision": {
+      "VUS-PR": {
+        "n": 60,
+        "patchtrad_mean": 0.6516276780356579,
+        "reference_mean": 0.7309182594183266,
+        "delta": -0.07929058138266858,
+        "patchtrad_wins": 19,
+        "wilcoxon_p": 0.0646358234494921
+      },
+      "AUC-ROC": {
+        "n": 60,
+        "patchtrad_mean": 0.6470882372582312,
+        "reference_mean": 0.8692034303508254,
+        "delta": -0.222115193092594,
+        "patchtrad_wins": 16,
+        "wilcoxon_p": 7.610085829949569e-06
+      }
+    }
+  },
+  "multivariate_unsupported_upstream": {
+    "vs_raw_flatten": {
+      "VUS-PR": {
+        "n": 40,
+        "patchtrad_mean": 0.5487978229278851,
+        "reference_mean": 0.5858750696369087,
+        "delta": -0.03707724670902363,
+        "patchtrad_wins": 9,
+        "wilcoxon_p": 0.0013141614608611284
+      },
+      "AUC-ROC": {
+        "n": 40,
+        "patchtrad_mean": 0.5567267460098074,
+        "reference_mean": 0.6702408057971475,
+        "delta": -0.11351405978734001,
+        "patchtrad_wins": 8,
+        "wilcoxon_p": 0.00020704736882811754
+      }
+    },
+    "vs_vision": {
+      "VUS-PR": {
+        "n": 40,
+        "patchtrad_mean": 0.5487978229278851,
+        "reference_mean": 0.5308148372442075,
+        "delta": 0.01798298568367761,
+        "patchtrad_wins": 18,
+        "wilcoxon_p": 0.9037015661647617
+      },
+      "AUC-ROC": {
+        "n": 40,
+        "patchtrad_mean": 0.5567267460098074,
+        "reference_mean": 0.6369061860824659,
+        "delta": -0.08017944007265829,
+        "patchtrad_wins": 12,
+        "wilcoxon_p": 0.014966980143057518
+      }
+    }
+  }
+}

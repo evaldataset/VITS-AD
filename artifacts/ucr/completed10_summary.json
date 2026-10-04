@@ -1,0 +1,159 @@
+{
+  "n_series": 10,
+  "n_target": 10,
+  "summary": {
+    "VITS_Traj": {
+      "mean": 0.5279263560052423,
+      "std": 0.2922480477546951,
+      "min": 0.0458178557704624,
+      "max": 0.8745293980943528,
+      "n": 10
+    },
+    "VITS_Dist": {
+      "mean": 0.8072303437593268,
+      "std": 0.17011860034933288,
+      "min": 0.4870729963144288,
+      "max": 0.974321803549539,
+      "n": 10
+    },
+    "VITS_Dual": {
+      "mean": 0.620199270427834,
+      "std": 0.2863754071076876,
+      "min": 0.09199436403227872,
+      "max": 0.934440813362382,
+      "n": 10
+    }
+  },
+  "per_series": [
+    {
+      "series": "239_UCR_Anomaly_taichidbS0715Master_190037_593450_593514",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/239_UCR_Anomaly_taichidbS0715Master_190037_593450_593514.txt",
+      "anomaly_start": 593450,
+      "anomaly_end": 593514,
+      "train_length": 448833,
+      "test_length": 448834,
+      "auc_roc": {
+        "VITS_Traj": 0.810140593444151,
+        "VITS_Dist": 0.9415585676557402,
+        "VITS_Dual": 0.8942636321267671
+      }
+    },
+    {
+      "series": "240_UCR_Anomaly_taichidbS0715Master_240030_884100_884200",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/240_UCR_Anomaly_taichidbS0715Master_240030_884100_884200.txt",
+      "anomaly_start": 884100,
+      "anomaly_end": 884200,
+      "train_length": 450000,
+      "test_length": 450000,
+      "auc_roc": {
+        "VITS_Traj": 0.7094974662162162,
+        "VITS_Dist": 0.8529138513513512,
+        "VITS_Dual": 0.7451731418918919
+      }
+    },
+    {
+      "series": "241_UCR_Anomaly_taichidbS0715Master_250000_837400_839100",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/241_UCR_Anomaly_taichidbS0715Master_250000_837400_839100.txt",
+      "anomaly_start": 837400,
+      "anomaly_end": 839100,
+      "train_length": 450000,
+      "test_length": 450000,
+      "auc_roc": {
+        "VITS_Traj": 0.25529336734693875,
+        "VITS_Dist": 0.5119132653061225,
+        "VITS_Dual": 0.3017920918367347
+      }
+    },
+    {
+      "series": "243_UCR_Anomaly_tilt12744mtable_100000_203355_203400",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/243_UCR_Anomaly_tilt12744mtable_100000_203355_203400.txt",
+      "anomaly_start": 203355,
+      "anomaly_end": 203400,
+      "train_length": 125000,
+      "test_length": 125001,
+      "auc_roc": {
+        "VITS_Traj": 0.4472099344454512,
+        "VITS_Dist": 0.974321803549539,
+        "VITS_Dual": 0.8051271118691041
+      }
+    },
+    {
+      "series": "245_UCR_Anomaly_tilt12754table_100211_270800_271070",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/245_UCR_Anomaly_tilt12754table_100211_270800_271070.txt",
+      "anomaly_start": 270800,
+      "anomaly_end": 271070,
+      "train_length": 149373,
+      "test_length": 149374,
+      "auc_roc": {
+        "VITS_Traj": 0.0458178557704624,
+        "VITS_Dist": 0.9233252209555528,
+        "VITS_Dual": 0.09199436403227872
+      }
+    },
+    {
+      "series": "246_UCR_Anomaly_tilt12755mtable_100211_270800_271070",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/246_UCR_Anomaly_tilt12755mtable_100211_270800_271070.txt",
+      "anomaly_start": 270800,
+      "anomaly_end": 271070,
+      "train_length": 149933,
+      "test_length": 149934,
+      "auc_roc": {
+        "VITS_Traj": 0.05778788266939925,
+        "VITS_Dist": 0.8437299859100807,
+        "VITS_Dual": 0.2359805302933265
+      }
+    },
+    {
+      "series": "247_UCR_Anomaly_tilt12755mtable_50211_121900_121980",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/247_UCR_Anomaly_tilt12755mtable_50211_121900_121980.txt",
+      "anomaly_start": 121900,
+      "anomaly_end": 121980,
+      "train_length": 100000,
+      "test_length": 100000,
+      "auc_roc": {
+        "VITS_Traj": 0.752332970225127,
+        "VITS_Dist": 0.963897966594045,
+        "VITS_Dual": 0.934440813362382
+      }
+    },
+    {
+      "series": "248_UCR_Anomaly_weallwalk_2000_4702_4707",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/248_UCR_Anomaly_weallwalk_2000_4702_4707.txt",
+      "anomaly_start": 4702,
+      "anomaly_end": 4707,
+      "train_length": 4216,
+      "test_length": 4216,
+      "auc_roc": {
+        "VITS_Traj": 0.6660566992444722,
+        "VITS_Dist": 0.71112497400707,
+        "VITS_Dual": 0.6887086712414223
+      }
+    },
+    {
+      "series": "249_UCR_Anomaly_weallwalk_2753_8285_8315",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/249_UCR_Anomaly_weallwalk_2753_8285_8315.txt",
+      "anomaly_start": 8285,
+      "anomaly_end": 8315,
+      "train_length": 5262,
+      "test_length": 5262,
+      "auc_roc": {
+        "VITS_Traj": 0.8745293980943528,
+        "VITS_Dist": 0.8624448059493377,
+        "VITS_Dual": 0.8723681152684174
+      }
+    },
+    {
+      "series": "250_UCR_Anomaly_weallwalk_2951_7290_7296",
+      "file": "data/UCR/AnomalyDatasets_2021/UCR_TimeSeriesAnomalyDatasets2021/FilesAreInHere/UCR_Anomaly_FullData/250_UCR_Anomaly_weallwalk_2951_7290_7296.txt",
+      "anomaly_start": 7290,
+      "anomaly_end": 7296,
+      "train_length": 5234,
+      "test_length": 5234,
+      "auc_roc": {
+        "VITS_Traj": 0.6605973925958524,
+        "VITS_Dist": 0.4870729963144288,
+        "VITS_Dual": 0.6321442323560151
+      }
+    }
+  ]
+}

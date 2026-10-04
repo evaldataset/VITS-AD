@@ -1,0 +1,20 @@
+# UCR Anomaly Archive (univariate) configuration.
+# Used by scripts/run_ucr_canonical.py and the UCR Hydra pipeline.
+# Each series defines its own train/test boundary; the canonical evaluation
+# iterates over the 109 eligible anomaly series listed in
+# results/ucr_canonical/combined_109.json.
+name: ucr
+raw_dir: data/raw/UCR_Anomaly_FullData
+processed_dir: data/processed/ucr
+num_features: 1
+# UCR series each carry their own train/test boundary embedded in the filename
+# (..._<train_end>_<anom_start>_<anom_end>.txt), so train_ratio is null.
+train_ratio: null
+window_size: 100
+stride: 10
+normalize: true
+norm_method: standard
+# Series ID for single-series runs.  Set to a specific UCR_Anomaly_<id>
+# filename to evaluate one series; left blank when looping over all 109 in
+# scripts/run_ucr_canonical.py.
+series: null
